@@ -14,7 +14,7 @@ Harnessing the power of Power BI embedded using its QnA feature
 ![Example screenshot](./packages/2.gif)
 ##
 ![Example screenshot](./packages/3.gif)
-
+##
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/CpbcTSYROik/0.jpg)](https://www.youtube.com/watch?v=CpbcTSYROik)
 
 **The entire demo of the project can be found on [YouTube](https://www.youtube.com/watch?v=CpbcTSYROik).**
