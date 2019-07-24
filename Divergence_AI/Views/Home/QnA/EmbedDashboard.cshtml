@@ -1,0 +1,88 @@
+﻿@model PowerBIEmbedded_AppOwnsData.Models.EmbedConfig
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Embedding QnA feature into the application</h2>
+
+<div id="qnaContainer" class="body-content" style="float:left;width:100%; height:500px;display:block"></div>
+
+<script src="https://npmcdn.com/es6-promise@3.2.1"></script>
+<script src="~/scripts/powerbi.js"></script>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div id="errorWrapper">
+        <h2>
+            Error
+        </h2>
+        @Model.ErrorMessage
+    </div>
+
+    return;
+}
+
+<div class="infoBox">
+<br />
+© Divergence.ai 2019
+</div>
+
+<script src="jquery.js"></script>  
+<script src="powerbi.js"></script>
+
+<script type="text/javascript">
+window.onload = function () {  
+
+var models = window['powerbi-client'].models;
+
+var accessToken = "@Model.EmbedToken.Token";
+
+var config= {
+    type: 'qna',
+    tokenType: models.TokenType.Embed,
+    accessToken: "H4sIAAAAAAAEAB2WxQ60CBaF3-XfMgluk_QCKNwdaoe7O51596nu_VncfDly__5jJU8_Jfmf__4ZPcJMDZgCs6rcpShjqekDsS0NBj7HVJRi7dhjf9dpcfmzT8Gjis8vPqAv7KAojwhI4W7YYW6ZKNnK9RFe-I0jW9Gm6nIlwGRFunLlrsKq70PAS-mxYh-iR03bLC1ptz03zEtraznoKIzpFEN0AE-UBx9OChPzfPPlBmT0cx4FNPts4W9xNnpqlR1FIQIQvqe5sd71Ft6-dF_qHTK6UwifDEt0PrWzETUDsQoztvCWO-UpIAVBhqq0FAXMWvDZQ7SQo_AzwsZ8DXz6XY0j6Nn0TMVLKrS6_bh43VV2xNAm9rla8bhFSEWrcisIZ9VUmkaIb06jWSYFsFOaSrIrPceC0L3LPlkZBJlltrV6ABI0wWS-nBBIa0f4bu6nzZdyBmueGK8itpMl8JuuIjFTXZenJbt1Y54qTXWRRAMAJeht5lSsq-GgYbXLizyxXZKZK4ivaYvauqjmnNilAUNIW8AEhmTMPhd6kVdPwm2Grx_tIMmFkxt-oB2MXiaYb-paVRXdz_vycj5YKAKSNhPQbKbVUlB3BjXfXT6RZDAMLo97PA7IQJS71YMrrJPq4Xl2P4jVjinnQS9Yzope2Re4i39c8WMdvhPfADMIGKSP1FdGDLMhogoRaP9YjIHhWvi0UThpWaozGL3-Qr5W5_0XwuFWCeeDzrg96L_3D8L5TfzbDHNJvrgsljxB56oVQygxVJERBVCclrrtqq2pAuucLKVgSlaIi-IZuDRVS81j4wCtKXlYF6fySRUGfR8AyibnW05CR9jmYAY38IZqc9hMyJYJPj6LVbHWGpEfeNzoz2Jkiqu9GzZW3Erm36jWbncZ-EDEzn0pBKX_vHmnj76IGtjKWgSYjInZMtyTrY7nlJBMkKhvadLXEF9FqVcktCC0VyeUIFvAjb-l0nqkdT5-WBZpXIcm6agpDYl6k0EegeEGO1HJynoWV4RC5tya451W_8QqPD_-AiOKvW3tgE-EQNKhvzxJF7gp1Y-qfWZ2IwTZe1wEQddRFAYSB9SMsDBNdJiHZoCQUMj8Y79IpGVcgmnT_rJStPa5d4LN4LhJ5FpKzjCVCUhwYY0mXAT3BooMOWARFGKMLQ0wuGlVT3emsMJMCXNtztA5McRjR7giheM9ucO7er4tpYVapDmdoEn71a759bqfAs6fDxKpNdSoi6th3Dxb0Tro1w44ztK_wXsSDjatBQuDgLsXDQqTWy4H6oX4fVal6sf3DnD8yCeJxgh28zJnKXYM0VyB1gtfpHOxK3NEwOH5cx-KhmdM7kx4lI_g-hZVtZIX9dDnUKtP-MO6EFt5yQhAdqDHw-VMlYxbnzrzfhT3dkQ-ssYxqyNBWcPVd0WzOZeOGtG7D3vwJSA4s9CzTbWdl_JYw8tlIjR5FYFlNhYrdhuJtuJ4A2xm2fliszXmCMJgNKoSYlWZfRue5y1gHHYLhCx8ML3H5D_63V3gY6KCQp7nniAsPM3SJy7yUz9i7DHyeZC6Jxr0JxSXMNBom54a1MJoUC8pTDQ3_GV1KOYOIQhlqinYPunO7DRw3LzlpWTYWL6P-wlTUNo7RFOkM8eSTYQ0B2bcN__VMRR8lpdeC5vmsqRzgvoY23NMt3n_qN4N-Mhd0pjhTheV4rmVXTMFsG28k7TaeMbkbvUnwDqdECtLmpp4COuJyJUUROgi2ndkeco5z8VLsHJ9JedaHgALaHVK8MTz6_AJ_4v8z_s-YmZ5v9ekkai60rjsG8yIPiWjQpcu3bv1QrvMskYjOcE-X0_zVHzJK91vWefXTDJQqjBoV9kNn6WBvJck2LeT12tUlGvyAAWQksCeCvRvwgA_uUS687Fqd35_CbfLXrY_vlFyj6Py-nRkgUVGE2koedpkxPGBQk4AWxFAjmsNsDMKuwXHyllrRApnLzkRnRKs-SUl2ylE1Tc8NV4q9EhQB8if__zh1mfeJ7V4fnOMztVrVSTG4mLniosc4SngXyb2O_3iSepKmCkbaS94KMjeN3CQ3Jjc1i6eaQt4uXpr6mJ9tENsRzWDLudJLZlX3tmPEiCFQwiw0NXUlGOK_RUl9EO-zuedKtRF6I-_DdcueiBsr9_wtXCyEQDncWydsK6iZCD_ejuV72UPgVg4CjzAIuxBwo5LoSRU8Ipif8LqbY0hf0paewAR50xye-RSKmMX4jclgq0bMc9wn6KUdU18FZKESr2dJZuy4SJZWw7fo2r9wMF0pup4o4Y-moFxE3XrgbIcdqc91KTBocRsH3Bkm5GxJmUu8xIpv_g2-_zaHLH1j3NPXsa_BvWJlmit7uqvv_7B_Mw_OHLwo9ziJ5RMK9rmqH5RALiAGiVc_6rcphqT_ViLn6yYBGsH9szg8BT-bsXJ8YrLSgWad-TYOnIaTAwHpCVlMiXth0Lpu5y4PBxFSq90CAQXAAIh2iz-yQC7qNQV27IBrGlmlb4YRlMnvt0joqDwzQTMqyI2AwL35DOTrvlYypseOp2pzyw9ODZ2Bk9bUIAGG5suv2fqaFtZjigW_DGP1CNij8H21KkaEst_QXpxf6fcMUphQyouXfaJSwO6OeLeEyVleyxOfA1MMwSSPAL395HDAqAWE1wYX50Ft_7NTPhAazJ_TaMdqBWSY2FUFC9WTJqvcQyvVl_8fYsRFXULk1xbEXg0Qi-zWIWVSZzNZW-V0iY8NEOPUO6-Bqr5rL6jYv8w_-__c7CeYYIKAAA=",
+	embedUrl: 'https://app.powerbi.com/qnaEmbed?groupId=cfa2a0cf-bcd8-4ae2-a84f-e8c8b5e00293',
+    datasetIds: ['9c10602a-9dc7-4b2d-8d9f-190cf2e354a8'],
+    viewMode: models.QnaMode.Interactive
+	
+};
+ 
+	// Get a reference to the embedded QNA HTML element
+	var qnaContainer = $('#qnaContainer')[0];
+ 
+	// Embed the QNA and display it within the div container.
+	var qna = powerbi.embed(qnaContainer, config);
+ 
+	// qna.off removes a given event handler if it exists.
+	qna.off("loaded");
+ 
+	// qna.on will add an event handler which prints to Log window.
+	qna.on("loaded", function(event) {
+		Log.logText("QNA loaded event");
+		Log.log(event.detail);
+	}); 
+}  
+
+</script>
+
+
+
+
+<!--
+			
+	var config = {
+			type: 'qna',
+			tokenType: models.TokenType.Embed,
+			accessToken: accessToken,
+			embedUrl: embedUrl,
+			datasetIds: txtDatasetId,
+			viewMode: models.QnAMode.Interactive,
+			question: txtQuestion
+			permissions: models.Permissions.All,
+			
+		};			
+			
+-->
+

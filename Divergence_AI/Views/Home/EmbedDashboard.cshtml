@@ -1,0 +1,272 @@
+﻿@model PowerBIEmbedded_AppOwnsData.Models.EmbedConfig
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Embedding QnA feature into the application</h2>
+
+
+
+
+
+<div id="qnaContainer" class="body-content" style="float:left;width:100%; height:500px;display:block">
+<iframe src="https://app.powerbi.com/qnaEmbed?groupId=cfa2a0cf-bcd8-4ae2-a84f-e8c8b5e00293&amp;uid=zm78ag" scrolling="no" allowfullscreen="true" style="width: 100%; height: 90%;">
+</iframe></div>
+
+
+
+
+<script>
+function sync()
+{
+  var n1 = document.getElementById('box1');
+  var n2 = document.getElementById('box2');
+  n2.value = n1.value;
+}
+</script>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://npmcdn.com/es6-promise@3.2.1"></script>
+<script src="~/scripts/powerbi.js"></script>
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div id="errorWrapper">
+        <h2>
+            Error
+        </h2>
+        @Model.ErrorMessage
+    </div>
+
+    return;
+}
+<div class="infoBox">
+    <br />
+    © Divergence.ai 2019
+</div>
+<script src="jquery.js"></script>
+<script src="powerbi.js"></script>
+<script type="text/javascript">
+
+window.onload = function () {
+
+var models = window['powerbi-client'].models;
+
+var accessToken = "@Model.EmbedToken.Token";
+
+var embedUrl='https://app.powerbi.com/qnaEmbed?groupId=cfa2a0cf-bcd8-4ae2-a84f-e8c8b5e00293'
+
+var txtDatasetId = ['9c10602a-9dc7-4b2d-8d9f-190cf2e354a8'];
+
+var config= {
+    type: 'qna',
+    tokenType: models.TokenType.Embed,
+    accessToken: accessToken,
+	embedUrl: embedUrl,
+    datasetIds: txtDatasetId,
+    viewMode: models.QnaMode.Interactive
+
+};
+
+	// Get a reference to the embedded QNA HTML element
+	var qnaContainer = $('#qnaContainer')[0];
+
+	// Embed the QNA and display it within the div container.
+	var qna = powerbi.embed(qnaContainer, config);
+
+	// qna.off removes a given event handler if it exists.
+	qna.off("loaded");
+
+	// qna.on will add an event handler which prints to Log window.
+	qna.on("loaded", function(event) {
+		Log.logText("QNA loaded event");
+		Log.log(event.detail);
+	});
+}
+</script>
+
+
+
+
+
+<!--
+
+ng-class="{'newStyle': $ctrl.useNewStyling }"
+aria-hidden="true"
+
+
+
+-----------------------------
+
+
+Enter your name: <input type="text" id="fname">
+
+<script>
+document.getElementById("fname").addEventListener("keyup", myFunction);
+
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+
+
+---------------------------------
+
+
+
+Enter your name: <input type="text" id="fname">
+
+<script>
+document.getElementById("fname").addEventListener("keyup", myFunction);
+
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+
+
+-----------------------
+
+<script>
+document.getElementById("box1").addEventListener("keyup", sync(this));
+
+function sync(textbox)
+{
+  document.getElementById('box2').value = textbox.value;
+}
+</script>
+--------------------------------------
+
+
+
+
+
+
+
+
+
+    var config = {
+            type: 'qna',
+            tokenType: models.TokenType.Embed,
+            accessToken: accessToken,
+            embedUrl: embedUrl,
+            datasetIds: txtDatasetId,
+            viewMode: models.QnAMode.Interactive,
+            question: txtQuestion
+            permissions: models.Permissions.All,
+
+
+
+        };
+		
+		
+		
+		
+		
+		
+		
+		<html>
+<head>
+<script language="javascript" type="text/javascript">
+function copyText() {
+var output = document.getElementById("main").innerHTML;
+document.getElementById("output").value = output;
+}
+</script>
+</head>
+<body>
+<style type="text/css">
+#main {
+border: solid 1px black;
+height: 100px;
+width: 100px;
+cursor: pointer;
+}
+</style>
+<div id="main" onDblClick="copyText()">Double Click me to copy all this text to the textbox.</div>
+<textarea cols="40" rows="5" id="output"></textarea>
+</body>
+</html>
+		
+		
+		
+		
+	--------	
+		
+		
+<input id="source" type="text" oninput="copyData('source', 'utteranceContent')"  /> 
+
+<hr style="clear:both;">
+
+
+<div id="new">
+<span class="terma" style="color: rgb(161, 159, 157);">hEY</span>
+</div>
+		
+		***
+		****
+		
+		<hr style="clear:both;">
+
+
+<div id="main"> Type your question here 
+<input id="ma" type="text" name="n" placeholder=" Ask a question about your data . . . " style="width: 510px; height: 20px"/>
+</div>
+
+<hr style="clear:both;">
+
+<script type="text/javascript">
+    function copyData(sourceId, targetId) {
+    var data = document.getElementById(sourceId).value;
+
+    document.getElementsByClassName("term-min").value  = data;
+	document.getElementsByClassName("terma").value  = data;   
+	console.log( document.getElementsByClassName("terma").value);
+	var span = document.getElementsByClassName("term-main")[0];
+	}
+  </script>
+
+
+
+
+
+
+
+
+
+Enter your question : <input type="text" name="n1" id="box1"  placeholder=" Ask a question about your data . . ." style="width: 534.1px; height: 30px" onclick="sync()">
+<hr style="clear:both;">
+Enter your question 2 : <input type="text" name="n2" id="box2"  placeholder=" ...... " style="width: 520px; height: 30px">
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+----------------------------		
+		
+		
+		
+	<!--
+<div id="ques" contenteditable="true" placeholder="Ask a question" spellcheck="false" role="presentation" style="float:right;width:100%; height:40px;display:block">
+<input type="text" name="n"/>
+</div>
+-->	
+		
+

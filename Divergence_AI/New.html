@@ -1,0 +1,758 @@
+﻿#document
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <title>Microsoft Power BI</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;">
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-ui" src="./13.0.10117.179/externals/jquery-ui.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="powerbi-models" src="./13.0.10117.179/externals/powerbi-models.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="infoNavBootstrap" src="./13.0.10117.179/scripts/infonavbootstrap.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="qnacore" src="./13.0.10117.179/scripts/powerbi.qnacore.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="qnaweb" src="./13.0.10117.179/scripts/powerbi.qnaweb.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="resizeSensor" src="./13.0.10117.179/externals/resizeSensor.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="singleValueVisuals" src="./13.0.10117.179/scripts/singleValueVisuals.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="cartesianVisuals" src="./13.0.10117.179/scripts/cartesianVisuals.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="exploreActions" src="./13.0.10117.179/scripts/exploreActions.min.js"></script><base href="/">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/PowerBI_Favicon.ico">
+    <link rel="stylesheet" href="13.0.10117.179/externals/jquery-ui.min.css"><link rel="stylesheet" href="13.0.10117.179/styles/infonavbootstrap.min.css"><link rel="stylesheet" href="13.0.10117.179/styles/powerbi.qnacore.min.css"><link rel="stylesheet" href="13.0.10117.179/styles/powerbi.qnaweb.min.css"><script>
+        var viewLoadingStarted = Date.now();
+
+
+
+        var isLoadReportMessagePending = false;
+        var isLoadQnaMessagePending = false;
+        var isCreateReportMessagePending = false;
+        var isReportControllerInitialized = false;
+        var isSaasEmbed = true;
+        var isSecurePublishToWeb = false;
+        var reportObjectId;
+        var accessToken;
+        var oDataFilter;
+        var phasedRender;
+        var legacyEmbedMessage = false;
+        var uid = 'hj81v' || 'defaultId';
+        var sdkSessionId;
+        var performanceOptimization = '' ;
+        var getConceptualSchemaByReportIdEnabled = '' !== "false";
+
+        var loadReportConfiguration;
+        var createReportConfiguration;
+        var loadQnaConfiguration;
+
+        function autoAuthEnabled() {
+            return "";
+        }
+
+        var powerBIAccessToken = '';
+        var powerBIAccessTokenExpiry = '';
+        //register for messages from parent window
+        if (autoAuthEnabled()) {
+            window.addEventListener('storage', storageEventHandler, false);
+            powerBIAccessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InU0T2ZORlBId0VCb3NIanRyYXVPYlY4NExuWSIsImtpZCI6InU0T2ZORlBId0VCb3NIanRyYXVPYlY4NExuWSJ9.eyJhdWQiOiJodHRwczovL2FuYWx5c2lzLndpbmRvd3MubmV0L3Bvd2VyYmkvYXBpIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNjc0ZDNlNmMtNDVmNy00MmU5LTkzOGMtZmNkMDFlM2ZmNTdjLyIsImlhdCI6MTU2MzQ5NTEyNywibmJmIjoxNTYzNDk1MTI3LCJleHAiOjE1NjM0OTkwMjcsImFjY3QiOjAsImFjciI6IjEiLCJhaW8iOiI0MkZnWVBqdzh0bGNxNW9qRVhjVC82aE43cWdvWm9sMHI3bDg1SVQzQzdkUG9nRXVCVnNCIiwiYW1yIjpbInB3ZCJdLCJhcHBpZCI6Ijg3MWMwMTBmLTVlNjEtNGZiMS04M2FjLTk4NjEwYTdlOTExMCIsImFwcGlkYWNyIjoiMiIsImlwYWRkciI6Ijk3Ljk5Ljc2LjIzMSIsIm5hbWUiOiJBc2hpc2ggU2hhcm1hIiwib2lkIjoiZWFlMTlmNGYtMWQzYi00OGE1LWI2YzctN2Y4ZDExYTIyYmE1IiwicHVpZCI6IjEwMDMyMDAwNEU2QTI0QjYiLCJzY3AiOiJ1c2VyX2ltcGVyc29uYXRpb24iLCJzdWIiOiJfQzBFcVAwSlpWaktDZUVhdWlvOVRfdHJROHJhaG8temlFSXhkUjFmTWE0IiwidGlkIjoiNjc0ZDNlNmMtNDVmNy00MmU5LTkzOGMtZmNkMDFlM2ZmNTdjIiwidW5pcXVlX25hbWUiOiJhc2hpc2hAZGl2ZXJnZW5jZS5haSIsInVwbiI6ImFzaGlzaEBkaXZlcmdlbmNlLmFpIiwidXRpIjoiRVpla3JQREZfMEdYMDhpbVBDMElBUSIsInZlciI6IjEuMCJ9.UPeeXy8xoV35efnlKaSIPUlozMQ3ee__9aGBKiXRmGwdCR89b802pp6sq-1K702EGoLStrxTEgAchuZ9Uwegc0QBENcajEUNSM8I4KWUYTj_9bBcRoZvUPbqAScj5J8WhPaGXNRLIrtYzJgaLA0za1kgLP2ZZMx6Uevj4lORs1ZRbxSSiYXxtl6h3IcwGrqzu0LkhB_vdijExdHp1xz6k0QS-HVJSalDFwcxjR1RiIZad3OtWHXTghWmmNaxXy1MYJiuiOJO-ybx2qtgCBZlw7fFXrag6CRZpM_2OnXLqFlEEyM_vEp-G7ACPeekKupVvmd5vDSdqy8z3RLmuz0Ovg';
+            powerBIAccessTokenExpiry = '2019-07-19 01:17:07Z';
+
+            window.addEventListener('DOMContentLoaded', function() {
+                // The showSignIn logic needs the scripts to be loaded, so we need to wait on DOMContentLoaded.
+                if (autoAuthEnabled()) {
+                    isSaasEmbed = false;
+                    isSecurePublishToWeb = true;
+                    showSignIn(powerBIAccessToken, "");
+                }
+            });
+        } else {
+            window.addEventListener('message', receiveMessage, false);
+        }
+
+        function storageEventHandler(evt) {
+            switch(evt.key) {
+                case 'accessTokenLastRefreshTime': location.reload();
+            }
+        }
+
+        var isMobile = '' == "true";
+
+        function startFrontLoadReportEmbed(config) {
+            // Disable front-load in auto auth mode.
+            if (autoAuthEnabled()) {
+                return;
+            }
+
+            if (performanceOptimization === "false") {
+                return;
+            }
+
+            // Front load report embed: resolveCluster, modelsAndExploration and conceptualSchema requests will be sent in parallel
+            // to scripts download to improve report embed performance.
+            // The promises will replace HttpService calls.
+
+            // Set groupId for front load. for folders use empty groupId
+            if ('' == '2') {
+                config.groupId = "";
+            } else {
+                config.groupId = (config.groupId == null || config.groupId == "") ? 'cfa2a0cf-bcd8-4ae2-a84f-e8c8b5e00293' : config.groupId;
+            }
+
+            if (loadReportConfiguration.type === "report") {
+                // Initiate promises
+                modelsAndExplorationPromise = defer();
+                conceptualSchemaPromise = defer();
+            }
+
+            let frontLoadMethod = getConceptualSchemaByReportIdEnabled ? getModelsAndExplorationAndConceptualSchema : getModelsAndExploration;
+            if (embedUrlConfig.clusterUrl == null || embedUrlConfig.clusterUrl == "") {
+                resolveClusterPromise = defer();
+                resolveCluster(config, frontLoadMethod);
+            } else {
+                frontLoadMethod(config, embedUrlConfig.clusterUrl);
+            }
+        }
+
+        //handle message from parent window
+        function receiveMessage(event) {
+            if (event.data) {
+                try {
+                    var messageData;
+                    try {
+                        messageData = JSON.parse(event.data);
+                    } catch (e) {
+                        messageData = event.data;
+                    }
+
+                    // if the reportController is initalized and the message is in the new format,
+                    // loadReport event will be handled by hostCommunicationHelper
+                    if (messageData.action === 'loadReport') {
+                        reportObjectId = messageData.reportId;
+                        accessToken = messageData.accessToken;
+                        oDataFilter = messageData.oDataFilter;
+                        legacyEmbedMessage = true;
+                        if (isReportControllerInitialized) {
+                            loadReport(reportObjectId, accessToken, oDataFilter);
+                        } else {
+                            isLoadReportMessagePending = true;
+                        }
+                    } else if (!isReportControllerInitialized) {
+                        if (messageData.method === 'POST' && (messageData.url === '/report/load' || messageData.url === '/report/prepare')) {
+                            uid = messageData.headers && messageData.headers['uid'];
+                            sdkSessionId = messageData.headers && messageData.headers['sdkSessionId'];
+                            loadReportConfiguration = messageData.body;
+                            phasedRender = messageData.url.indexOf('prepare') !== -1;
+                            isLoadReportMessagePending = true;
+                        } else if (messageData.method === 'POST' && messageData.url === '/report/create') {
+                            uid = messageData.headers && messageData.headers['uid'];
+                            sdkSessionId = messageData.headers && messageData.headers['sdkSessionId'];
+                            createReportConfiguration = messageData.body;
+                            isCreateReportMessagePending = true;
+                        } else if (messageData.method === 'POST' && messageData.url === '/qna/load') {
+                            uid = messageData.headers && messageData.headers['uid'];
+                            sdkSessionId = messageData.headers && messageData.headers['sdkSessionId'];
+                            loadQnaConfiguration = messageData.body;
+                            isLoadQnaMessagePending = true;
+                        }
+                    }
+
+                    if (messageData.method === 'POST' && messageData.url === '/frontload/config') {
+                        // Frontload config is sent after Powerbi-Javascript receive the ready post message
+                        loadReportConfiguration = messageData.body;
+                        startFrontLoadReportEmbed(loadReportConfiguration);
+                    }
+                }
+                catch (e) {
+                    var embedReportLoadMessage = {
+                        event: 'error',
+                        error: 'Invalid message data:'+ e.message,
+                    };
+                    window.parent.postMessage(JSON.stringify(embedReportLoadMessage), '*');
+                    return;
+                }
+            }
+        }
+        var baseUrl = window.location.protocol + '//' + window.location.host;
+        var powerbi = {
+            session : {
+                userInfo: {
+                    name:  'ashish@divergence.ai',
+                    givenName: '',
+                    surname: '',
+                    puid: '100320004E6A24B6',
+                    uoid: 'eae19f4f-1d3b-48a5-b6c7-7f8d11a22ba5',
+                    alternateEmail: ''
+                }
+            }
+        };
+
+        powerbi.telemetrySamplingRules = 'embed';
+        powerbi.build = '13.0.10117.179';
+        powerbi.buildDetails = '13.0.10117.179 ((Main).190713-2105)';
+        powerbi.customVisualsUrl = 'https://visuals.azureedge.net/;https://visuals2.azureedge.net/;https://extendcustomvisual.blob.core.windows.net/';
+        powerbi.visualCDNBlobContainerUrl = 'prod';
+        powerbi.common = {};
+        powerbi.common.cultureInfo = 'en-US';
+        powerbi.common.unmappedCultureInfo = 'en-US';
+        powerbi.common.formattingLocale = 'en-US';
+        var clusterUri =  'https://wabi-us-central-a-primary-redirect.analysis.windows.net';
+        var tenantId = '674d3e6c-45f7-42e9-938c-fcd01e3ff57c';
+        var previousTenantId = '';
+        var telemetrySessionId =  '35ba38a1-3f9d-4cd0-aeda-43a741f83d0a';
+        var sessionSource = "Embed";
+        var appInsightsV2InstrKey = '00406067-1af3-44c5-a2c1-4a57dd50194c';
+        var initialDashboardContainer = undefined;
+        var appLoadError = undefined;
+        
+        var featureSwitches = {aADGroupCreationSettingMigratedEnabled:true,addPreviewTagToAttachExternalDataflow:true,adminAuditingEnabled:true,adminBranding:true,adminCapacityEnabled:true,adminWorkspaceEnabled:true,advancedSlicerSyncing:true,aiInsightsFunctionBrowser:true,allowEmailSecurityGroupsOnOutage:true,allowExploreDatasetOfApp:true,allowFreeUsersToSubscribeInPremiumAppsUI:true,allowInsightsQuestions:true,allowSectionVerticalAlignment:true,allUpSaveReport:true,altTextForVisual:true,analyzeInExcelEnabled:true,analyzeInExcelSovereignFormatEnabled:true,annotationsUI:true,anonymousEmbeddingEnabled:true,appAccessRequestUI:true,appB2BSharingUI:true,appPushEnabled:true,appRepublishErrorHandlingUpdate:true,appsEnabled:true,appThemingUI:true,artifactSearchTenantAdminSettings:true,artifactSearchTenantEnabled:true,aSConnectorEnabled:true,asyncAppUpdate:true,auditingEnabled:true,autoInstallImprovement:true,autoPausedSyncService:true,axisInteractivity:true,azureStreamAnalyticsManagedIdentityAuthorizationEnabled:true,baseTheme:true,binnedLineSampling:true,bookmarkGrouping:true,cancelDataflowRefresh:true,canvasItemsPane:true,capacitiesAzureTab:true,capacitiesMigrateSpecificWorkspaces:true,capacitiesVCores:true,capacityBanner:true,capacityMetricDrilldown:true,capacityMetrics:true,capacityRestartButton:true,capacitySettingsTabs:true,capacityWorkloads:true,cartesianConditionalFormatting:true,cdsaBringYourOwnStorageAccountUI:true,cdsaCDMFolderReferenceUI:true,cdsaEntitiesRelationships:true,cdsaExternalStorageReferenceUI:true,cdsaFastCombineDefaultOffFrontend:true,cdsaFolderStorageAccountUI:true,cdsaFrontend:true,cdsaGraphCurvedLine:true,cDSAManagementEnabled:true,cdsaSendEmailOnRefreshFailureUI:true,cdsaSettingsTakeover:true,cdsaWorkspaceDependencyGraph:true,cdsaWorkspaceGraphDataflowEntities:true,cdsaWorkspaceGraphDatasources:true,cellLevelFormatting:true,certifyDatasetsSetting:true,clientUsageMetricsEnabled:true,closeAccountEnabled:true,cloudRlsImpersonationEnabled:true,cloudRlsRoleMembershipEnabled:true,comparisonODataPredicates:true,contentAuthoringUIEnabled:true,copyReportsToWorkspacesV2:true,createAppWorkspacesEnabled:true,createAppWorkspaceSettingMigration:true,createCapacityWithRegion:true,crossReportDrill:true,csvContentProviderEnabled:true,customCommands:true,customEngineWorkloadSettings:true,customVisuals:true,customVisualsGallery:true,customVisualsPerformanceTelemetry:true,customVisualsStore:true,customVisualsTenantEnabled:true,customVisualsTenantSwitch:true,customVisualsUseStaticSandbox:true,dashboardB2BSharingWithRegularHost:true,dashboardEmailSubscription:true,dashboardEmbedEnabled:true,dashboardInstantEmail:true,dashboardThemesUI:true,dataBoundPropertiesUseThemeDefaults:true,dataClassificationEnabled:true,datasetDownloadPbix:true,datasetPropertiesSection:true,dataViewTargeted:true,dateODataType:true,defaultSortMethodology:true,defaultTooltipFormatting:true,developServiceAppsEnabled:true,directQueryScheduledRefresh:true,disableExportDataOnVisualError:true,discoverDataSourceButton:true,distributionFactorsInsight:true,donutImprovements:true,dotPlot:true,downloadReportEnabled:true,drillFilterOtherVisuals:true,drillthrough:true,drillthroughToPods:true,dsrV2:true,dynamicMessageEnabled:true,editWorkspaceShowsRegion:true,eimWorkspaceDiagram:true,eimWorkspaceDiagramDatasources:true,elevatedGuests:true,emailSubscriptionEnabled:true,emailSubscriptionTenantAdminSettings:true,emailSubscriptionTenantEnabled:true,embedCodesEnabled:true,embedCodesNew:true,embeddingEnabled:true,embedFullFidelityWorkbooks:true,enableQueryCaching:true,enableSearchInFilter:true,enterpriseGatewayEnabled:true,enterpriseGatewayETLEnabled:true,esriEnabled:true,excelWorkbooksInContentPackEnabled:true,explorePermissionOnDataset:true,exportDataEnabled:true,exportDataMode:true,exportExcelExcludeMeasures:true,exportReportToPdfEnabled:true,exportReportToPowerPointEnabled:true,exportToPowerPointEnabled:true,exportToPowerPointModal:true,exportUnderlyingDataEnabled:true,exportVisualToExcelEnabled:true,exportWithExportBookmark:true,exprBoundColors:true,exprBoundColorValidation:true,exprBoundVisualTitle:true,externalSharingEnabled:true,externalSharingV2Enabled:true,ffxlChartSelectionEnabled:true,ffxlLocalFilesEnabled:true,filterPaneCustomSort:true,fullFidelityExcelEnabled:true,gatewayBasicLoadBalancing:true,gatewayMultipleCredentials:true,gatewayMultipleCredentialsRDLReports:true,gaugeConditionalFormatting:true,granularTenantControls:true,groupCapacity:true,helpAndSupportSettings:true,homeArtifactSearchUI:true,homeRecommendedAppsUI:true,homeUI:true,htmlLegend:true,httpServiceModern:true,importExternalDataEnabled:true,importPbiviz:true,improvedFilterExperience:true,increasedExportPowerPointSectionLimit:true,inODataPredicates:true,insightApps:true,insightsExplore:true,insightsNonAdditive:true,insightsStoreEnabled:true,insightsSyncServiceEnabled:true,installServiceAppsEnabled:true,instantEmail:true,keepQueryProjOrderForShowAll:true,keyDriverPaas:true,keyDrivers:true,keyDriversBinning:true,keyDriversCounting:true,keyDriversNumericTarget:true,keyDriversVisualColor:true,lessIntrusiveNpsDialog:true,lineChartLabelPosition:true,lineMarkersEnabled:true,lineStylesEnabled:true,loadBaseTheme:true,mappingExecutionType:true,mapPointSampling:true,measureDrillthrough:true,multiGeoGatewaysCredentialsWarning:true,multipleODataPredicates:true,multiVisualSelection:true,newDSCompInDataset:true,newLookCesFeedback:true,newLookUI:true,newVisualContainerHeader:true,ngrxStore:true,nonAsciiODataNames:true,nonValidatedAppAdminControl:true,notificationInfoModern:true,oneGBUploadFileSizeEnabled:true,onPremAnalyzeInExcelEnabled:true,onPremDirectQuerySingleSignOnForOracle:true,onPremDirectQuerySingleSignOnForSAP:true,onPremDirectQuerySingleSignOnForSapBw:true,onPremDirectQuerySingleSignOnForSapBwMessageServer:true,onPremDirectQuerySingleSignOnForSql:true,onPremDirectQuerySingleSignOnForTeradata:true,openExploreErrorDetails:true,outspaceBackground:true,overlappingPointsSampling:true,paginatedReports:true,paginatedReportsSqlAzureSSO:true,paginatedReportsSubscriptions:true,permissionCenterEnabled:true,permissionCenterUxUpdate:true,personalBookmarksUI:true,phoneReportFilters:true,pivotTableVisualEnabled:true,playAxisDataColors:true,preferHigherDataVolume:true,previewConceptualModel:true,printingEnabled:true,publishContentPackEnabled:true,qnaDidYouMean:true,qnaExplore:true,qnaPopout:true,qnaPopoutInDashboard:true,qnaRedUnderline:true,qnaSupportOnPremEnabled:true,qnaTextboxNew:true,queryCancellation:true,rdlReportInApps:true,rdlReportInGlobalSearch:true,rdlReportJsonRplRenderer:true,rdlReportPrint:true,rdlReportSharingUI:true,readOnlyGroupEnabled:true,recentNew:true,redlineAlignment:true,removeAuthoringToolSaveButton:true,removeDataflowPreviewTag:true,reportAnnotationsUI:true,reportFavoritesUI:true,reportMeasures:true,reportSharingUI:true,rolloutCapacitiesList:true,rScriptVisualEnabled:true,saasMarketplace:true,salesforceAndOneDriveCredentialsEnabled:true,sandboxVisualsEnabled:true,scatterChartRatioLine:true,scatterChartShading:true,scatterWithDataVolume:true,scatterWithMatrixDV:true,scatterXYGrouping:true,scheduledRefreshCCNotifications:true,scheduledSubscriptionUI:true,scriptVisualAnonymousEmbeddingEnabled:true,scriptVisualEnabled:true,searchWorkspaces:true,securePublishToWeb:true,serviceAppsEnabled:true,servicePrincipalTenantAdminSettings:true,sharedDatasetDiscovery:true,sharePointDocumentLibrariesEnabled:true,sharePointEmbedEnabled:true,showDashboardQnaNewUIToggle:true,showDataflowsInGetData:true,singleFilterPane:true,skipTestConnectionOnPrem:true,slicerSyncing:true,slowDataSourceModeEnabled:true,smartAlertsTenantEnabled:true,socialSharingEnabled:true,sparkAppEnabled:true,spoIntegration:true,spoWithTutorialVisuals:true,stagingRdlInApps:true,steppedLine:true,stickyUserStateCustomViz:true,stickyUserStateUI:true,stickyUserStateUIThrottling:true,strictSingleSelect:true,subscribeOthersUI:true,supportBulkOperationsInAdminPortal:true,tablixIcons:true,tablixPreserveScrollFix:true,tablixTooltips:true,tablixTotalLabel:true,templateAppValidateAppInstall:true,themeRelative:true,trackUserInfo:true,unreadAnnotationsBadge:true,urlBookmarksTenantEnabled:true,urlBookmarksUI:true,usageMetricsEnabled:true,usageMetricsRetroactiveDisable:true,usageMetricsTrackUserLevelInfoEnabled:true,usageMetricsUpgrade:true,useBatchGeocoding:true,useDatasetsAcrossWorkspacesEnabled:true,useModernLicenseHelperService:true,useModernLicenseStrategyService:true,useModernVisual:true,visualFiltersCustomSort:true,visualHeaderTooltip:true,visualLevelSlicerFilters:true,visualsOutsideNgZone:true,visualTabOrders:true,waterfallBreakdown:true,whatIf:true,workloadMetrics:true,workspacesV2:true,workspacesV2GA:true,workspacesV2GAFeatures:true,workspacesV2UnifiedGroups:true,workspacesV2UsageMetrics:true,workspacesV2ViewerRole:true,zOrder:true};
+    </script>
+
+
+
+    <link rel="stylesheet" href="13.0.10117.179/styles/reportembed.bundle.min.css">
+
+        <script>
+
+
+        var embedUrlConfig = {
+            clusterUrl: ''
+        }
+    </script>
+
+
+    <script>
+        var resolveClusterPromise;
+
+        var clusterResolutionFrontLoadStartTime = null;
+        var clusterResolutionFrontLoadEndTime = null;
+
+        const tokenPrefix = ['Bearer ', 'EmbedToken '];
+        const unknownErrorCode = 500;
+        const resolveClusterPrefix = "resolveCluster";
+
+        function resolveCluster(config, nextFrontloadCall) {
+            try {
+                clusterResolutionFrontLoadStartTime = Date.now();
+                var activityId = telemetrySessionId;
+                var requestId = '111849d6-0dda-425a-81bb-beecfefe364b';
+
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    try {
+                        var status = xhr.status;
+                        if (xhr.readyState == XMLHttpRequest.DONE) {
+                            clusterResolutionFrontLoadEndTime = Date.now();
+                            if (isSuccess(status)) {
+                                var response = xhrBuildResponse(xhr, activityId, requestId);
+                                if (response.data.clusterUrl || response.data.backendUrl) {
+                                    resolvedClusterUri = response.data.clusterUrl || response.data.backendUrl;
+                                    resolveClusterPromise.resolve(response);
+                                    nextFrontloadCall(config, resolvedClusterUri);
+                                } else {
+                                    resolveClusterPromise.reject(buildExceptionResponse(activityId, requestId, {message: "clusterUrl and backendUrl are empty"}, resolveClusterPrefix));
+                                }
+                            } else {
+                                try {
+                                    resolveClusterPromise.reject(xhrBuildResponse(xhr, activityId, requestId, true /*isError*/));
+                                }
+                                catch (e) {
+                                    // Cannot parse an error out of the response
+                                    resolveClusterPromise.reject(buildExceptionResponse(activityId, requestId, e, resolveClusterPrefix));
+                                }
+                            }
+                        }
+                    }
+                    catch (e) {
+                        resolveClusterPromise.reject(buildExceptionResponse(activityId, requestId, e, resolveClusterPrefix));
+                    }
+                }
+
+                let url;
+                if (isSaaSEmbedWithAADToken(config)) {
+                    url = clusterUri + "/powerbi/globalservice/v201606/clusterdetails";
+                }
+                else {
+                    url = clusterUri + "/metadata/cluster";
+                }
+
+                xhr.open("GET", url);
+                setGETRequestHeaders(xhr, telemetrySessionId, requestId, config);
+                xhr.send();
+            }
+            catch (e) {
+                resolveClusterPromise.reject(buildExceptionResponse(activityId, requestId, e, resolveClusterPrefix));
+            }
+        }
+
+        function setGETRequestHeaders(xhr, activityId, requestId, config) {
+            xhr.setRequestHeader('Accept', 'application/json');
+            xhr.setRequestHeader('ActivityId', activityId);
+            xhr.setRequestHeader('RequestId', requestId);
+
+            // Default token type is Aad (0)
+            let tokenType = config.tokenType || 0;
+            xhr.setRequestHeader('Authorization', tokenPrefix[tokenType] + config.accessToken);
+        }
+
+        function setGETRequestHeadersWithGroupId(xhr, activityId, requestId, config) {
+            setGETRequestHeaders(xhr, activityId, requestId, config);
+            xhr.setRequestHeader('X-PowerBI-User-GroupId', config.groupId);
+        }
+
+        function setPOSTRequestHeaders(xhr, activityId, requestId, config) {
+            setGETRequestHeaders(xhr, activityId, requestId, config);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.setRequestHeader('X-PowerBI-User-GroupId', config.groupId);
+        }
+
+        function isSaaSEmbedWithAADToken(config) {
+            // Default token type is Aad (0)
+            const tokenType = config.tokenType || 0;
+            return (window.isSaasEmbed === true) && (tokenType === 0);
+        }
+
+        function defer() {
+            let res, rej;
+
+            let promise = new Promise((resolve, reject) => {
+                res = resolve;
+                rej = reject;
+            });
+
+            promise.resolve = result => {
+                res(result);
+            };
+
+            promise.reject = error => {
+                rej(error);
+            };
+
+            return promise;
+        }
+
+        function xhrBuildResponse(xhr, activityId, requestId, isError) {
+            let response = {
+                activityId: activityId,
+                requestId: requestId,
+                status: xhr.status,
+            };
+
+            xhrResponse = xhr.response && JSON.parse(xhr.response);
+            if (!isError)
+                response["data"] = xhrResponse;
+            else
+                response["error"] = xhrResponse && xhrResponse.error;
+
+            return response;
+        }
+
+        function buildExceptionResponse(activityId, requestId, exception, prefix) {
+            return {
+                activityId: activityId,
+                requestId: requestId,
+                status: unknownErrorCode,
+                error: {
+                    message: prefix + " Exception: " + exception.message,
+                    code: "FrontLoadException",
+                },
+            }
+        }
+
+        function isSuccess(status) {
+            return status >= 200 && status < 300;
+        }
+    </script>
+    <script>
+        var modelsAndExplorationPromise;
+        var conceptualSchemaPromise;
+
+        var modelsAndExplorationFrontLoadStartTime = null;
+        var modelsAndExplorationFrontLoadEndTime = null;
+        var conceptualSchemaFrontLoadStartTime = null;
+        var conceptualSchemaFrontLoadEndTime = null;
+
+        const modelsAndExplorationPrefix = "modelsAndExploration";
+        const conceptualSchemaPrefix = "conceptualSchema";
+
+        function getModelsAndExploration(config, resolvedClusterUri) {
+            if (!modelsAndExplorationPromise) {
+                // This happens in cases where getModelsAndExploration is not needed, like QnA embed.
+                return;
+            }
+
+            try {
+                modelsAndExplorationFrontLoadStartTime = Date.now();
+                var activityId = telemetrySessionId;
+                var requestId = '3bcca038-593e-40c0-800d-669fd728dffc';
+                url = resolvedClusterUri + "/explore/reports/" + config.id + "/modelsAndExploration?preferReadOnlySession=true";
+
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    try {
+                        var status = xhr.status;
+                        if (xhr.readyState == XMLHttpRequest.DONE) {
+                            modelsAndExplorationFrontLoadEndTime = Date.now();
+                            if (isSuccess(status)) {
+                                var response = xhrBuildResponse(xhr, activityId, requestId);
+                                modelsAndExplorationPromise.resolve(response);
+                                modelsAndExplorationRequestId = requestId;
+                                if (!getConceptualSchemaByReportIdEnabled) {
+                                    getConceptualSchema(config, resolvedClusterUri, response.data);
+                                }
+                            } else {
+                                try {
+                                    modelsAndExplorationPromise.reject(xhrBuildResponse(xhr, activityId, requestId, true /*isError*/));
+                                }
+                                catch (e) {
+                                    // Cannot parse an error out of the response
+                                    modelsAndExplorationPromise.reject(buildExceptionResponse(activityId, requestId, e, modelsAndExplorationPrefix));
+                                }
+                            }
+                        }
+                    }
+                    catch (e) {
+                        modelsAndExplorationPromise.reject(buildExceptionResponse(activityId, requestId, e, modelsAndExplorationPrefix));
+                    }
+                }
+
+                xhr.open("GET", url);
+                setGETRequestHeadersWithGroupId(xhr, telemetrySessionId, requestId, config);
+                xhr.send();
+            }
+            catch (e) {
+                modelsAndExplorationPromise.reject(buildExceptionResponse(activityId, requestId, e, modelsAndExplorationPrefix));
+            }
+        }
+
+        function getConceptualSchema(config, resolvedClusterUri, modelsAndExploration) {
+            if (!conceptualSchemaPromise) {
+                // This happens in cases where getConceptualSchema is not needed, like QnA embed.
+                return;
+            }
+
+            try {
+                conceptualSchemaFrontLoadStartTime = Date.now();
+
+                var modelIds;
+
+                if (!getConceptualSchemaByReportIdEnabled) {
+                    if (modelsAndExploration && modelsAndExploration.models && modelsAndExploration.models.length > 0) {
+                        modelIds = modelsAndExploration.models.map(model => model.id);
+                    } else {
+                        conceptualSchemaPromise.reject(buildExceptionResponse(activityId, requestId, {message: "modelsAndExploration models is empty"}, conceptualSchemaPrefix));
+                        return;
+                    }
+                }
+
+                var activityId = telemetrySessionId;
+                var requestId = '9d8008a9-600b-471a-91c4-b02a6a83e0cb';
+
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    try {
+                        conceptualSchemaFrontLoadEndTime = Date.now();
+                        var status = xhr.status;
+                        if (xhr.readyState == XMLHttpRequest.DONE) {
+                            if (isSuccess(status)) {
+                                var data = JSON.parse(xhr.responseText);
+                                conceptualSchemaDuration = conceptualSchemaFrontLoadEndTime - conceptualSchemaFrontLoadStartTime;
+                                conceptualSchemaRequestId = requestId;
+
+                                let schemas;
+                                if (data.schemas) {
+                                    // Get schemas by model Id return an array of schemas in schemas property.
+                                    schemas = data.schemas;
+                                } else {
+                                    // Get schema by report Id returns only one schema - which is the response body.
+                                    // Add schema to an array in order to run successfully in the same flow as get schemas by model Id.
+                                    schemas = [data];
+                                }
+
+                                conceptualSchemaPromise.resolve({
+                                    requestId: requestId,
+                                    schemas: schemas,
+                                });
+                            } else {
+                                try {
+                                    var error = JSON.parse(xhr.response);
+                                        conceptualSchemaPromise.reject({
+                                            requestId: requestId,
+                                            error: error,
+                                            status: xhr.status,
+                                            schemas: undefined,
+                                        });
+                                }
+                                catch (e) {
+                                    // Cannot parse an error out of the response
+                                    conceptualSchemaPromise.reject(buildExceptionResponse(activityId, requestId, e, conceptualSchemaPrefix));
+                                }
+                            }
+                        }
+                    }
+                    catch (e) {
+                        conceptualSchemaPromise.reject(buildExceptionResponse(activityId, requestId, e, conceptualSchemaPrefix));
+                    }
+                }
+
+                const userPreferredLocale = powerbi.common.unmappedCultureInfo;
+
+                if (getConceptualSchemaByReportIdEnabled) {
+                    // Request should be:
+                    // GET /explore/reports/<report guid>/conceptualschema.
+                    url = resolvedClusterUri + `/explore/reports/${config.id}/conceptualschema?userPreferredLocale=${userPreferredLocale}`;
+                    xhr.open("GET", url);
+                    setGETRequestHeadersWithGroupId(xhr, telemetrySessionId, requestId, config);
+                    xhr.send();
+                }
+                else {
+                    // Request should be:
+                    // POST /explore/conceptualschema, modelIds and userPreferredLocale in request body.
+                    url = resolvedClusterUri + "/explore/conceptualschema";
+
+                    var data = JSON.stringify({
+                        modelIds: modelIds,
+                        userPreferredLocale: userPreferredLocale
+                    });
+
+                    xhr.open("POST", url);
+                    setPOSTRequestHeaders(xhr, telemetrySessionId, requestId, config);
+                    xhr.send(data);
+                }
+            } catch (e) {
+                conceptualSchemaPromise.reject(buildExceptionResponse(activityId, requestId, e, conceptualSchemaPrefix));
+            }
+        }
+
+        function getModelsAndExplorationAndConceptualSchema(config, resolvedClusterUri) {
+            getModelsAndExploration(config, resolvedClusterUri);
+            getConceptualSchema(config, resolvedClusterUri, null /* modelsAndExplorationResponse */);
+        }
+    </script>
+<style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; touch-action-delay: none; }
+body /shadow-deep/ [touch-action="none"]{ -ms-touch-action: none; touch-action: none; touch-action-delay: none; }
+[touch-action="auto"]{ -ms-touch-action: auto; touch-action: auto; touch-action-delay: none; }
+body /shadow-deep/ [touch-action="auto"]{ -ms-touch-action: auto; touch-action: auto; touch-action-delay: none; }
+[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; touch-action-delay: none; }
+body /shadow-deep/ [touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; touch-action-delay: none; }
+[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; touch-action-delay: none; }
+body /shadow-deep/ [touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; touch-action-delay: none; }
+[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; touch-action-delay: none; }
+body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; touch-action-delay: none; }
+</style><style></style><script src="13.0.10117.179/scripts/ai.0.js"></script><script charset="utf-8" src="13.0.10117.179/scripts/reportEmbed.qnaui.min.js"></script><style>.powerbi-spinner[_ngcontent-c0] {
+  display: inline-block !important;
+  width: 20px;
+  height: 20px;
+  text-align: initial !important;
+  vertical-align: middle;
+}
+.powerbi-spinner[_ngcontent-c0]   .spinner[_ngcontent-c0] {
+  transform: scale(0.35714286);
+}
+.powerbi-spinner.centered[_ngcontent-c0] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.powerbi-spinner.xlarge[_ngcontent-c0] {
+  width: 48px;
+  height: 48px;
+}
+.powerbi-spinner.xlarge[_ngcontent-c0]   .spinner[_ngcontent-c0] {
+  transform: scale(0.85714286);
+}
+.powerbi-spinner.xlarge.centered[_ngcontent-c0] {
+  margin-top: -24px;
+  margin-left: -24px;
+}
+.powerbi-spinner.large[_ngcontent-c0] {
+  width: 32px;
+  height: 32px;
+}
+.powerbi-spinner.large[_ngcontent-c0]   .spinner[_ngcontent-c0] {
+  transform: scale(0.57142857);
+}
+.powerbi-spinner.large.centered[_ngcontent-c0] {
+  margin-top: -16px;
+  margin-left: -16px;
+}
+.powerbi-spinner.small[_ngcontent-c0] {
+  width: 20px;
+  height: 20px;
+}
+.powerbi-spinner.small[_ngcontent-c0]   .spinner[_ngcontent-c0] {
+  transform: scale(0.35714286);
+}
+.powerbi-spinner.small.centered[_ngcontent-c0] {
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.powerbi-spinner.xsmall[_ngcontent-c0] {
+  width: 16px;
+  height: 16px;
+}
+.powerbi-spinner.xsmall[_ngcontent-c0]   .spinner[_ngcontent-c0] {
+  transform: scale(0.28571429);
+}
+.powerbi-spinner.xsmall.centered[_ngcontent-c0] {
+  margin-top: -8px;
+  margin-left: -8px;
+}
+.powerbi-spinner[_ngcontent-c0]   .spinner[_ngcontent-c0] {
+  position: static;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  box-sizing: content-box;
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+html[dir="rtl"][_ngcontent-c0]   .powerbi-spinner[_ngcontent-c0]   .spinner[_ngcontent-c0] {
+  transform-origin: top left;
+}
+.powerbi-spinner[_ngcontent-c0]   .spinner[_ngcontent-c0]   .circle[_ngcontent-c0] {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  opacity: 0;
+  transform: rotate(225deg);
+  animation-iteration-count: infinite;
+  animation-name: orbit;
+  animation-duration: 5.5s;
+}
+.powerbi-spinner[_ngcontent-c0]   .spinner[_ngcontent-c0]   .circle[_ngcontent-c0]:after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: #666;
+  
+}
+.powerbi-spinner[_ngcontent-c0]   .spinner[_ngcontent-c0]   .circle[_ngcontent-c0]:nth-child(2) {
+  animation-delay: 360ms;
+}
+.powerbi-spinner[_ngcontent-c0]   .spinner[_ngcontent-c0]   .circle[_ngcontent-c0]:nth-child(3) {
+  animation-delay: 720ms;
+}
+.powerbi-spinner[_ngcontent-c0]   .spinner[_ngcontent-c0]   .circle[_ngcontent-c0]:nth-child(4) {
+  animation-delay: 1080ms;
+}
+.powerbi-spinner[_ngcontent-c0]   .spinner[_ngcontent-c0]   .circle[_ngcontent-c0]:nth-child(5) {
+  animation-delay: 1440ms;
+}
+@keyframes orbit {
+  0% {
+    transform: rotate(225deg);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  7% {
+    transform: rotate(345deg);
+    animation-timing-function: linear;
+  }
+  30% {
+    transform: rotate(455deg);
+    animation-timing-function: ease-in-out;
+  }
+  39% {
+    transform: rotate(690deg);
+    animation-timing-function: linear;
+  }
+  70% {
+    transform: rotate(815deg);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    transform: rotate(945deg);
+    animation-timing-function: ease-out;
+  }
+  76% {
+    transform: rotate(945deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(945deg);
+    opacity: 0;
+  }
+}</style><style>p[_ngcontent-c1] {
+  color: red;
+  font-weight: bold;
+}</style><style></style><style>[_nghost-c3] {
+  position: absolute;
+}</style><style>.visualHeaderItemContainer[_ngcontent-c11] {
+  display: inline-block;
+  vertical-align: top;
+}
+.stylableVisualContainerHeader[_nghost-c11]   .visualHeaderItemContainer[_ngcontent-c11], .stylableVisualContainerHeader   [_nghost-c11]   .visualHeaderItemContainer[_ngcontent-c11] {
+  height: 20px;
+  padding-top: 1px;
+  margin-left: 4px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}</style><style type="text/css">@keyframes resizeanim {from { opacity: 0; } to { opacity: 0; }} .ResizeSensor__resizeTriggers { animation: 1ms resizeanim; visibility: hidden; opacity: 0; } .ResizeSensor__resizeTriggers, .ResizeSensor__resizeTriggers > div, .ResizeSensor__contractTrigger:before { content: ' '; display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; } .ResizeSensor__resizeTriggers > div { background: #eee; overflow: auto; } .ResizeSensor__contractTrigger:before { width: 200%; height: 200%; }</style></head>
+<body><div id="i4c-draggable-container" style="position: fixed; z-index: 1499; width: 0px; height: 0px;"><div data-reactroot="" class="resolved" style="all: initial;"></div></div>
+    <!-- perf: loading screen -->
+    <div id="pbiLoadingPlaceholder" class="">
+        
+    </div>
+
+    <div id="pbiAppPlaceHolder">
+        <!-- check for login as a part of loading report embed controller -->
+        <!----><ui-view><qna-container><div><div ng-hide="showErrorMessage" id="reportLandingContainer" class="embedQna"><!----><div ng-if="qnaContainerInitialized" class="embedInfoNavContainer" ng-class="{ interpretResultView: inputControlDisabled }"><section class="explorationContainer infoNavContainer" role="application" host-service="infoNavHostService" info-nav-container-options="infoNavContainerOptions" question-box-output="questionBoxOutput" interpret-listener="infoNavContainerInterpretListener" usage-reporting-enabled="allowQnaDataCollection" models="models" get-additional-o-data-filter="getAdditionalODataFilter"><exploration-scoped-services-bridge ng-version="7.2.7"><exploration-host class="explorationHost" view-model="viewModel" id="athenaExplorationHost"><div class="fillAvailableSpace verticalItemsContainer" ng-transclude=""><!----><article class="qnaTaskPane taskPane sidePane rightSidePane smallFontSize ng-hide isCollapsed" keyboard-shortcuts="ctrl-F6" focus-nav-mode="Group" focus-priority="9" ng-class="{ isCollapsed: !viewModel.isPaneExpanded }" modeling-context-changer="" view-model="viewModel.taskPane" field-list-config="::fieldListConfig" ng-if="hasResult" ng-show="infoNavContainerOptions.showTaskPane" resizable="" resizable-containerid="athenaExplorationHost" resizable-sibling="qnaVizPane" resizable-expanded="false" resizable-default-width="180" resizable-min-width="180" resizable-max-width="420" resizable-collapsed-width="32" style="width: 32px;"><div class="paneHeader"> <button class="toggleBtn isCollapsed" ng-class="{ isCollapsed: !viewModel.isPaneExpanded }" ng-click="toggleTaskPane()" localize-tooltip="Pane_Toggle" title="Show/hide pane"><div class="btnIcon glyphicon pbi-glyph-chevronrightmedium glyph-mini"></div><!----><div class="verticalTitle"><h2 class="largeFontSize" localize="TaskPane_Fields">Fields</h2></div></button></div><!----><div class="pane-splitter" style="display: none;"></div></article><!----><!----><article class="qnaVizPane visualizationPane sidePane rightSidePane smallFontSize ng-hide isCollapsed" keyboard-shortcuts="ctrl-F6" focus-nav-mode="Group" focus-priority="7" ng-class="{ isCollapsed: !viewModel.isPaneExpanded }" modeling-context-changer="" ng-if="hasResult" ng-show="infoNavContainerOptions.showVisualizationPane" view-model="viewModel.visualizationPane" resizable="" resizable-containerid="athenaExplorationHost" resizable-sibling="qnaTaskPane" resizable-expanded="false" resizable-default-width="180" resizable-min-width="180" resizable-max-width="420" resizable-collapsed-width="32" style="width: 32px;"><div class="paneHeader"> <button class="toggleBtn isCollapsed" aria-label="Filters" aria-expanded="false" ng-class="{ isCollapsed: !viewModel.isPaneExpanded }" ng-click="toggle()" localize-tooltip="Pane_Toggle" title="Show/hide pane"><div class="btnIcon glyphicon pbi-glyph-chevronrightmedium glyph-mini"></div><div class="sidePaneHorizontalTitle unselectable sidePaneTitle largeFontSize trimmedTextWithEllipsis ng-hide" ng-bind="viewModel.header" ng-show="viewModel.isPaneExpanded">Filters</div><div class="verticalTitle verticalText" ng-show="!viewModel.isPaneExpanded"><span class="collapsedVisualsTitle largeFontSize ng-hide" ng-bind="viewModel.header" ng-show="populatePanes">Filters</span><!----></div></button></div><!----><div class="pane-splitter" style="display: none;"></div></article><!----><div class="infonavContentWrapper"><section class="infonavContent" ng-style="{'max-height':infoNavContentMaxHeight}" style="max-height: 928px;"><div class="infonavHeader"><!----><qna-input qna-supported-scopes="qnaSupportedScopes" get-additional-o-data-filter="getAdditionalODataFilter" output="questionBoxOutput" interpret-listener="interpretListener" ng-if="newQnaEnabled" entry-point="'Dashboard'"><div class="qnaInputContainer" ng-class="{withBorder: $ctrl.presentationViewModel.withBorder, withShadow: $ctrl.presentationViewModel.withShadow}" ng-style="{'background-color': $ctrl.presentationViewModel.backgroundColor, 'color': $ctrl.presentationViewModel.fontColor, 'border-color': $ctrl.presentationViewModel.borderColor}" role="application" style="background-color: transparent; color: rgb(102, 102, 102); border-color: transparent;"><span class="glyphicon pbi-glyph-qna icon" ng-click="$ctrl.selectUtterance()"></span><div id="box"><div id="utterance" tabindex="-1" contenteditable="false" aria-label="Q&amp;A question box. Auto-complete available. When auto-complete suggestions are available, use up and down arrows to review, Enter to select, and Escape to close the list"><div id="utteranceContent" contenteditable="true" ng-class="{'newStyle': $ctrl.useNewStyling }" placeholder="Ask a question about your data" spellcheck="false" role="presentation" aria-hidden="true" class="newStyle"><span class="term used"><span class="term-main" style="color: rgb(102, 102, 102);">Count</span></span><span class="term used space"><span class="term-main" style="color: rgb(102, 102, 102);"> </span></span><span class="term used"><span class="term-main" style="color: rgb(102, 102, 102);">of</span></span><span class="term used space"><span class="term-main" style="color: rgb(102, 102, 102);"> </span></span><span class="term used bindings replacements row"><span class="term-main" style="color: rgb(102, 102, 102); border-bottom-color: rgb(0, 120, 212);">sales</span><ul contenteditable="false" class="themeableElement themeableList" style="display: none; left: 73px;"><li class="replacement"><div>sales</div><div class="replacementDetail">(Sale)</div></li><li class="replacement"><div>Salesville</div><div class="replacementDetail">(City &gt; City)</div></li><li class="replacement"><div>salesperson</div><div class="replacementDetail">(Employee &gt; Is Salesperson)</div></li><li class="replacement"><div>sales territory</div><div class="replacementDetail">(City &gt; Sales Territory)</div></li></ul></span><span class="term used space"><span class="term-main" style="color: rgb(102, 102, 102);"> </span></span><span class="term used"><span class="term-main" style="color: rgb(102, 102, 102);">by</span></span><span class="term used space"><span class="term-main" style="color: rgb(102, 102, 102);"> </span></span><span class="term used bindings replacements corrected"><span class="term-main" style="color: rgb(102, 102, 102); border-bottom-color: rgb(255, 0, 0);">month</span><ul contenteditable="false" class="themeableElement themeableList" style="display: none; left: 135px;"><li class="replacement"><div>date month</div></li><li class="replacement"><div>valid to month</div><div class="replacementDetail">(Stock Item &gt; Date Hierarchy &gt; Month)</div></li><li class="replacement"><div>valid from month</div><div class="replacementDetail">(City &gt; Date Hierarchy &gt; Month)</div></li><li class="replacement"><div>valid from month</div><div class="replacementDetail">(Customer &gt; Date Hierarchy &gt; Month)</div></li><li class="replacement"><div>month</div><div class="replacementDetail">(Date &gt; Date Hierarchy &gt; Month)</div></li><li class="replacement"><div>valid to month</div><div class="replacementDetail">(City &gt; Date Hierarchy &gt; Month)</div></li><li class="replacement"><div>valid to month</div><div class="replacementDetail">(Customer &gt; Date Hierarchy &gt; Month)</div></li><li class="replacement"><div>valid from month</div><div class="replacementDetail">(Stock Item &gt; Date Hierarchy &gt; Month)</div></li><li class="replacement"><div>calendar month label</div><div class="replacementDetail">(Date &gt; Calendar Month Label)</div></li><li class="replacement"><div>fiscal month label</div><div class="replacementDetail">(Date &gt; Fiscal Month Label)</div></li><li class="replacement"><div>calendar month number</div><div class="replacementDetail">(Date &gt; Calendar Month Number)</div></li></ul></span><span class="term used space"><span class="term-main" style="color: rgb(102, 102, 102);"> </span></span><span class="term used"><span class="term-main" style="color: rgb(102, 102, 102);">as</span></span><span class="term used space"><span class="term-main" style="color: rgb(102, 102, 102);"> </span></span><span class="term used bindings replacements"><span class="term-main" style="color: rgb(102, 102, 102); border-bottom-color: rgb(0, 120, 212);">column</span><ul contenteditable="false" class="themeableElement themeableList" style="display: none; left: 208px;"><li class="replacement"><div>column</div><div class="replacementDetail">(Visualization Type)</div></li><li class="replacement"><div>table</div><div class="replacementDetail">(Visualization Type)</div></li><li class="replacement"><div>map</div><div class="replacementDetail">(Visualization Type)</div></li><li class="replacement"><div>matrix</div><div class="replacementDetail">(Visualization Type)</div></li><li class="replacement"><div>line chart</div><div class="replacementDetail">(Visualization Type)</div></li><li class="replacement"><div>pie chart</div><div class="replacementDetail">(Visualization Type)</div></li><li class="replacement"><div>scatter chart</div><div class="replacementDetail">(Visualization Type)</div></li><li class="replacement"><div>clustered bar chart</div><div class="replacementDetail">(Visualization Type)</div></li><li class="replacement"><div>stacked bar chart</div><div class="replacementDetail">(Visualization Type)</div></li><li class="replacement"><div>100% stacked bar chart</div><div class="replacementDetail">(Visualization Type)</div></li></ul></span></div><!----><div class="qnaIconContainer"><!----><!----><!----></div></div></div></div><!----><div id="cap" ng-click="$ctrl.hideAllMenus()" style="display: none;"></div></qna-input><!----></div><div class="infonavMainContent"><div class="infoNavCanvas" ng-show="hasResult" canvas-definition="infoNavCanvasDefinition" respect-pane-updates="true" is-web-dashboard="true"><!----><section class="exploration" ng-if="viewModel.exploreCanvas" ng-style="explorationStyle"><explore-canvas view-model="viewModel.exploreCanvas"><div class="exploreCanvas themeableElement disableAnimations master-form-factor" ng-keydown="C.onKeyDown($event)" pinchable="{ 'startHandler' : 'C.canvasPinchStart(scale)', 'endHandler' : 'C.canvasPinchEnd(scale)', 'scrollParentSelector' : '.exploration', 'zoomDisabled': 'C.shouldDisableZoom()', 'childDisplaySelector': '.displayArea' }" enable-pinch="true" swipeable="{ enabled: true, ignoreFrom: '.swipeable-blocked' }" canvas-navigation="true"><canvas-watermark></canvas-watermark><div class="backgroundContainer outspaceContainer" ng-class="C.outspaceBackground.imageFitClass" ng-style="C.outspaceBackground.backgroundStyle" style="opacity: 1; background-color: rgb(255, 255, 255);"><!----></div><!----><div class="canvasFlexBox"><div class="displayAreaContainer ui-droppable" canvas-scroll="" drop="C.dropConfig" drop-handler="C.drop(event, ui)" ng-click="C.clearSelection($event)" on-resize="C.canvasResized(width, height)" style="overflow: hidden;"><div class="displayAreaViewport"></div><div class="displayArea disableAnimations fitToScreen" container-printer="" calculate-print-styles="C.calculatePrintStyles" print-container-selector="displayArea" disable-print="C.disablePrint" ng-style="C.canvasBackground.displayAreaStyle" style="transform: scale(1); box-shadow: rgba(200, 200, 200, 0) 0px 0px 10px; outline: none;"><div class="backgroundContainer visualBackgroundContainer themableBackgroundColorSolid" ng-class="C.canvasBackground.imageFitClass" ng-style="C.canvasBackground.backgroundStyle" style="opacity: 0; background-color: rgb(255, 255, 255);"><!----></div><div class="visualContainerHost" keyboard-shortcuts="ctrl-F6" focus-nav-mode="Group" tab-order-enabled="" focus-priority="0" ng-dblclick="C.showQna($event)"><!----><!----><!----><!----><!----><div ng-if="useModernVisual &amp;&amp; !C.visualContainerGroupingEnabled"><!----><visual-container-modern ng-repeat="visualContainer in C.visibleVisualContainers()" [view-model]="visualContainer" [canvas-layout]="C.layout" [transform-parent]="'div.visualContainerHost'" class="visual-container-component" _nghost-c2="" ng-version="7.2.7"><transform _ngcontent-c2="" _nghost-c3="" class="selected" drag-resize-disabled="true" preserve-aspect-ratio="false" style="height: 340px; width: 681px; transform: translate(0px, -20px); z-index: 0;"><div _ngcontent-c2="" class="visualContainer unselectable droppableElement ui-droppable selected swipeable-blocked readMode hideBorder" skip-children-focus="" toolbar-anchor="" tabindex="0" aria-label="Count of Sale by Month Clustered column chart " touch-action="pan-y pan-x"><div _ngcontent-c2="" class="visualContainerBorder"></div><div _ngcontent-c2="" class="visualContainerScreen"></div><!----><!----><!----><visual-container-header-modern _ngcontent-c2="" _nghost-c5=""><div _ngcontent-c5="" class="vcHeader themableBackgroundColorSolid" focus-nav-mode="Group" keyboard-shortcuts="alt-shift-F10 scoped"><!----><!----><visual-container-drill _ngcontent-c5=""><!----><!----><!----><!----><!----></visual-container-drill><i _ngcontent-c5="" class="dragGrip glyphicon pbi-glyph-gripperbarhorizontal glyph-small"></i><div _ngcontent-c5="" class="optionsMenu"><!----><!----><!----><!----><visual-container-drill-toggle _ngcontent-c5="" class="optionSection"><!----></visual-container-drill-toggle><!----><visual-container-pin-button _ngcontent-c5="" class="optionSection" tabindex="-1"><!----></visual-container-pin-button><!----><visual-container-filter-restatement-button _ngcontent-c5="" class="optionSection" tabindex="-1" _nghost-c14=""><!----><visual-header-item-container _ngcontent-c14="" _nghost-c11=""><div _ngcontent-c11="" class="visualHeaderItemContainer themeableElement"><button _ngcontent-c14="" aria-expanded="false" aria-haspopup="true" class="vcFilterRestatementBtn" aria-label="Button to show current filters for visual"><i _ngcontent-c14="" class="glyphicon pbi-glyph-filter glyph-small"></i></button></div></visual-header-item-container></visual-container-filter-restatement-button><!----><div _ngcontent-c5="" class="optionSection"><!----><visual-header-item-container _ngcontent-c5="" class="vcPopOutBtn" _nghost-c11=""><div _ngcontent-c11="" class="visualHeaderItemContainer themeableElement"><button _ngcontent-c5="" class="vcPopOutBtn" aria-label="Focus mode"><i _ngcontent-c5="" class="glyphicon pbi-glyph-miniexpand glyph-small"></i></button></div></visual-header-item-container><!----><!----><visual-container-options-menu _ngcontent-c5=""><visual-header-item-container _nghost-c11=""><div _ngcontent-c11="" class="visualHeaderItemContainer themeableElement"><button aria-expanded="false" aria-haspopup="true" class="vcMenuBtn" type="button" aria-label="More options"><i class="glyphicon pbi-glyph-more glyph-small"></i></button></div></visual-header-item-container></visual-container-options-menu></div></div><div class="ResizeSensor ResizeSensor__resizeTriggers"><div class="ResizeSensor__expandTrigger"><div style="width: 1px; height: 1px;"></div></div><div class="ResizeSensor__contractTrigger"></div></div></div></visual-container-header-modern><!----><!----><!----><div _ngcontent-c2="" class="vcBody themableBackgroundColor themableBorderColorSolid " style="width: 681px; height: 320px;"><!----><div _ngcontent-c2="" class="visualTitle themableBackgroundColor themableColor" style="visibility: visible; font-size: 12px; height: 16.0156px;" title="Count of Sale by Month"><!----><div _ngcontent-c2=""><div _ngcontent-c2="" class="preTextWithEllipsis" style="width: 671px;">Count of Sale by Month</div></div></div><!----><visual-modern _ngcontent-c2="" _nghost-c7=""><div _ngcontent-c7="" class="allow-deferred-rendering visual visual-clusteredColumnChart" focus-nav-mode="Group" initialized=""><svg class="cartesianChart" width="671" height="293.984375" style="position: absolute; margin-top: 0px;"><rect class="clearCatcher" width="100%" height="100%"></rect><g class="axisGraphicsContext" transform="translate(28,8)"><g class="y axis showLinesOnAxis" transform="translate(0,0)" style="fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;"><g class="tick" transform="translate(0,239.984375)" style="opacity: 1;"><line x2="643" y2="0" class="zero-line" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy=".32em" x="-10" y="0" style="text-anchor: end; fill: rgb(119, 119, 119);">0K<title>0K</title></text></g><g class="tick" transform="translate(0,192.1875)" style="opacity: 1;"><line x2="643" y2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy=".32em" x="-10" y="0" style="text-anchor: end; fill: rgb(119, 119, 119);">5K<title>5K</title></text></g><g class="tick" transform="translate(0,144.390625)" style="opacity: 1;"><line x2="643" y2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy=".32em" x="-10" y="0" style="text-anchor: end; fill: rgb(119, 119, 119);">10K<title>10K</title></text></g><g class="tick" transform="translate(0,96.59375)" style="opacity: 1;"><line x2="643" y2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy=".32em" x="-10" y="0" style="text-anchor: end; fill: rgb(119, 119, 119);">15K<title>15K</title></text></g><g class="tick" transform="translate(0,48.796874999999986)" style="opacity: 1;"><line x2="643" y2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy=".32em" x="-10" y="0" style="text-anchor: end; fill: rgb(119, 119, 119);">20K<title>20K</title></text></g><g class="tick" transform="translate(0,1)" style="opacity: 1;"><line x2="643" y2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy=".32em" x="-10" y="0" style="text-anchor: end; fill: rgb(119, 119, 119);">25K<title>25K</title></text></g><path class="domain" d="M643,1H0V239.984375H643"></path></g><g class="y axis" transform="translate(643,0)"></g></g><svg class="svgScrollable" x="0" width="671" height="293.984375" style="overflow: hidden;"><g class="axisGraphicsContext columnChart" transform="translate(28,8)"><g class="x axis hideLinesOnAxis setFocusRing" transform="translate(0,240.984375)" tabindex="0" focusable="true"><g class="tick" transform="translate(37.823529411764724,0)" style="opacity: 1;"><line y2="0" x2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy="-0.5em" y="10.666666666666666px" x="0" dx="-5.5px" transform="rotate(-35)" tabindex="0" focusable="true" class="setFocusRing" style="text-anchor: end; fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;">May<title>May</title></text></g><g class="tick" transform="translate(85.1029411764706,0)" style="opacity: 1;"><line y2="0" x2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy="-0.5em" y="10.666666666666666px" x="0" dx="-5.5px" transform="rotate(-35)" tabindex="0" focusable="true" class="setFocusRing" style="text-anchor: end; fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;">April<title>April</title></text></g><g class="tick" transform="translate(132.3823529411765,0)" style="opacity: 1;"><line y2="0" x2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy="-0.5em" y="10.666666666666666px" x="0" dx="-5.5px" transform="rotate(-35)" tabindex="0" focusable="true" class="setFocusRing" style="text-anchor: end; fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;">January<title>January</title></text></g><g class="tick" transform="translate(179.66176470588235,0)" style="opacity: 1;"><line y2="0" x2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy="-0.5em" y="10.666666666666666px" x="0" dx="-5.5px" transform="rotate(-35)" tabindex="0" focusable="true" class="setFocusRing" style="text-anchor: end; fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;">March<title>March</title></text></g><g class="tick" transform="translate(226.94117647058823,0)" style="opacity: 1;"><line y2="0" x2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy="-0.5em" y="10.666666666666666px" x="0" dx="-5.5px" transform="rotate(-35)" tabindex="0" focusable="true" class="setFocusRing" style="text-anchor: end; fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;">February<title>February</title></text></g><g class="tick" transform="translate(274.22058823529414,0)" style="opacity: 1;"><line y2="0" x2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy="-0.5em" y="10.666666666666666px" x="0" dx="-5.5px" transform="rotate(-35)" tabindex="0" focusable="true" class="setFocusRing" style="text-anchor: end; fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;">July<title>July</title></text></g><g class="tick" transform="translate(321.5,0)" style="opacity: 1;"><line y2="0" x2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy="-0.5em" y="10.666666666666666px" x="0" dx="-5.5px" transform="rotate(-35)" tabindex="0" focusable="true" class="setFocusRing" style="text-anchor: end; fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;">October<title>October</title></text></g><g class="tick" transform="translate(368.7794117647059,0)" style="opacity: 1;"><line y2="0" x2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy="-0.5em" y="10.666666666666666px" x="0" dx="-5.5px" transform="rotate(-35)" tabindex="0" focusable="true" class="setFocusRing" style="text-anchor: end; fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;">June<title>June</title></text></g><g class="tick" transform="translate(416.05882352941177,0)" style="opacity: 1;"><line y2="0" x2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy="-0.5em" y="10.666666666666666px" x="0" dx="-5.5px" transform="rotate(-35)" tabindex="0" focusable="true" class="setFocusRing" style="text-anchor: end; fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;">December<title>December</title></text></g><g class="tick" transform="translate(463.3382352941176,0)" style="opacity: 1;"><line y2="0" x2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy="-0.5em" y="10.666666666666666px" x="0" dx="-5.5px" transform="rotate(-35)" tabindex="0" focusable="true" class="setFocusRing" style="text-anchor: end; fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;">September<title>September</title></text></g><g class="tick" transform="translate(510.61764705882354,0)" style="opacity: 1;"><line y2="0" x2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy="-0.5em" y="10.666666666666666px" x="0" dx="-5.5px" transform="rotate(-35)" tabindex="0" focusable="true" class="setFocusRing" style="text-anchor: end; fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;">November<title>November</title></text></g><g class="tick" transform="translate(557.8970588235293,0)" style="opacity: 1;"><line y2="0" x2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy="-0.5em" y="10.666666666666666px" x="0" dx="-5.5px" transform="rotate(-35)" tabindex="0" focusable="true" class="setFocusRing" style="text-anchor: end; fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;">August<title>August</title></text></g><g class="tick" transform="translate(605.1764705882351,0)" style="opacity: 1;"><line y2="0" x2="0" style="stroke: rgb(234, 234, 234); stroke-width: 1;"></line><text dy="-0.5em" y="10.666666666666666px" x="0" dx="-5.5px" transform="rotate(-35)" tabindex="0" focusable="true" class="setFocusRing" style="text-anchor: end; fill: rgb(119, 119, 119); font-family: &quot;Segoe UI&quot;, wf_segoe-ui_normal, helvetica, arial, sans-serif; font-size: 10.6667px;">(Blank)<title>(Blank)</title></text></g><path class="domain" d="M0,0V0H643V0"></path></g><g class="columnChartUnclippedGraphicsContext"><svg class="mainGraphicsContext setFocusRing" tabindex="0" focusable="true" aria-label="Plot area" height="240.984375" width="643"><g class="series" style="fill: rgb(1, 184, 170);"><rect class="column setFocusRing" tabindex="0" focusable="true" aria-label="Month May. Count of Sale 24165." width="37.27536231884058" x="18.911764705882373" y="8.982078124999987" height="231.002296875" style="fill-opacity: 1;"></rect><rect class="column setFocusRing" tabindex="0" focusable="true" aria-label="Month April. Count of Sale 22937." width="37.27536231884058" x="66.19117647058825" y="20.720990625000013" height="219.263384375" style="fill-opacity: 1;"></rect><rect class="column setFocusRing" tabindex="0" focusable="true" aria-label="Month January. Count of Sale 22620." width="37.27536231884058" x="113.47058823529413" y="23.751312499999983" height="216.23306250000002" style="fill-opacity: 1;"></rect><rect class="column setFocusRing" tabindex="0" focusable="true" aria-label="Month March. Count of Sale 22485." width="37.27536231884058" x="160.75" y="25.041828124999995" height="214.942546875" style="fill-opacity: 1;"></rect><rect class="column setFocusRing" tabindex="0" focusable="true" aria-label="Month February. Count of Sale 18984." width="37.27536231884058" x="208.02941176470588" y="58.50919999999999" height="181.475175" style="fill-opacity: 1;"></rect><rect class="column setFocusRing" tabindex="0" focusable="true" aria-label="Month July. Count of Sale 18735." width="37.27536231884058" x="255.30882352941177" y="60.889484374999995" height="179.094890625" style="fill-opacity: 1;"></rect><rect class="column setFocusRing" tabindex="0" focusable="true" aria-label="Month October. Count of Sale 17235." width="37.27536231884058" x="302.5882352941176" y="75.228546875" height="164.755828125" style="fill-opacity: 1;"></rect><rect class="column setFocusRing" tabindex="0" focusable="true" aria-label="Month June. Count of Sale 17178." width="37.27536231884058" x="349.86764705882354" y="75.77343124999999" height="164.21094375" style="fill-opacity: 1;"></rect><rect class="column setFocusRing" tabindex="0" focusable="true" aria-label="Month December. Count of Sale 16123." width="37.27536231884058" x="397.1470588235294" y="85.858571875" height="154.125803125" style="fill-opacity: 1;"></rect><rect class="column setFocusRing" tabindex="0" focusable="true" aria-label="Month September. Count of Sale 16001." width="37.27536231884058" x="444.42647058823525" y="87.02481562499997" height="152.95955937500003" style="fill-opacity: 1;"></rect><rect class="column setFocusRing" tabindex="0" focusable="true" aria-label="Month November. Count of Sale 15970." width="37.27536231884058" x="491.70588235294116" y="87.32115625" height="152.66321875" style="fill-opacity: 1;"></rect><rect class="column setFocusRing" tabindex="0" focusable="true" aria-label="Month August. Count of Sale 15549." width="37.27536231884058" x="538.985294117647" y="91.34565312500001" height="148.638721875" style="fill-opacity: 1;"></rect><rect class="column setFocusRing" tabindex="0" focusable="true" aria-label="Month (Blank). Count of Sale 284." width="37.27536231884058" x="586.2647058823528" y="237.2695125" height="2.7148625000000095" style="fill-opacity: 1;"></rect></g><use href="#currentFocusDataPoint-8c4d3696-1eda-fa6f-a75b-969e716d50c4" style="pointer-events: none; fill: none;"></use></svg></g><svg class="trend-line-layer" height="240.984375" width="643"></svg></g><g class="labelBackgroundGraphicsContext" transform="translate(28,8)"></g><g class="labelGraphicsContext" transform="translate(28,8)"></g></svg></svg></div></visual-modern><!----><!----><!----><!----></div><!----><!----></div></transform></visual-container-modern><!----></div><!----><!----></div><!----></div><div class="ResizeSensor ResizeSensor__resizeTriggers"><div class="ResizeSensor__expandTrigger"><div style="width: 682px; height: 341px;"></div></div><div class="ResizeSensor__contractTrigger"></div></div></div><!----></div></div></explore-canvas></section><!----></div><!----><!----></div><div class="infonavFooter"><!----><h3 ng-if="restatement &amp;&amp; !infoNavContainerOptions.cortana" class="restatement">Showing month and number of sales as clustered column chart</h3><!----><!----><h3 ng-if="sourceLabel" class="dataSource">Source: CH02-Loaded</h3><!----></div></section></div></div></exploration-host></exploration-scoped-services-bridge></section></div><!----></div><!----></div></qna-container></ui-view>
+        <root ng-version="7.2.7"><router-outlet></router-outlet><ng-component></ng-component></root>
+    </div>
+
+    <script>
+        // 'pbiLoadingPlaceholder' acts as a wrapper and is displayed only when scripts are enabled.
+        // This makes sure loading screen is displayed only if scripts are enabled.
+        // If scripts are disabled the 'noscript' tag is displayed with the error message
+        var pbiLoadingPlaceholderElement = document.querySelector('#pbiLoadingPlaceholder');
+        pbiLoadingPlaceholderElement.classList.remove('displayNone');
+
+        if (uid !== 'defaultId' && typeof Promise === "function" /*Front load is not supported on IE*/) {
+            // Ready message is sent to the Powerbi-Javascript, in order to start report embed front load
+            window.parent.postMessage({method: "POST", url: '/ready/' + uid}, '*');
+        }
+    </script>
+
+    <script type="text/javascript">this.parseTimeMarkers = this.parseTimeMarkers || {};this.parseTimeMarkers['globalize.min.js'] = { nominalStart: Date.now(), start: Date.now()};</script><script type="text/javascript" src="13.0.10117.179/scripts/jquery.globalize/globalize.min.js" defer=""></script>
+<script type="text/javascript">this.parseTimeMarkers['globalize.min.js'].end = Date.now();</script><script type="text/javascript">this.parseTimeMarkers = this.parseTimeMarkers || {};this.parseTimeMarkers['globalize.culture.en-US.js'] = { nominalStart: Date.now(), start: Date.now()};</script><script type="text/javascript" src="13.0.10117.179/scripts/jquery.globalize/globalize.culture.en-US.js" defer=""></script>
+<script type="text/javascript">this.parseTimeMarkers['globalize.culture.en-US.js'].end = Date.now();</script>    <script>
+
+        powerbi.common.localizedStrings = '';
+    </script>
+<script type="text/javascript">this.parseTimeMarkers = this.parseTimeMarkers || {};this.parseTimeMarkers['reportembed.externals.bundle.min.js'] = { nominalStart: Date.now(), start: Date.now()};</script><script type="text/javascript" src="13.0.10117.179/scripts/reportembed.externals.bundle.min.js" defer=""></script>
+<script type="text/javascript">this.parseTimeMarkers['reportembed.externals.bundle.min.js'].end = Date.now();</script><script type="text/javascript">this.parseTimeMarkers = this.parseTimeMarkers || {};this.parseTimeMarkers['powerbiportal.dependencies.bundle.min.js'] = { nominalStart: Date.now(), start: Date.now()};</script><script type="text/javascript" src="13.0.10117.179/scripts/powerbiportal.dependencies.bundle.min.js" defer=""></script>
+<script type="text/javascript">this.parseTimeMarkers['powerbiportal.dependencies.bundle.min.js'].end = Date.now();</script><script type="text/javascript">this.parseTimeMarkers = this.parseTimeMarkers || {};this.parseTimeMarkers['reportembed.common.bundle.min.js'] = { nominalStart: Date.now(), start: Date.now()};</script><script type="text/javascript" src="13.0.10117.179/scripts/reportembed.common.bundle.min.js" defer=""></script>
+<script type="text/javascript">this.parseTimeMarkers['reportembed.common.bundle.min.js'].end = Date.now();</script><script type="text/javascript">this.parseTimeMarkers = this.parseTimeMarkers || {};this.parseTimeMarkers['es6-promise.min.js'] = { nominalStart: Date.now(), start: Date.now()};</script><script type="text/javascript" src="13.0.10117.179/scripts/es6-promise.min.js" defer=""></script>
+<script type="text/javascript">this.parseTimeMarkers['es6-promise.min.js'].end = Date.now();</script><script type="text/javascript">this.parseTimeMarkers = this.parseTimeMarkers || {};this.parseTimeMarkers['powerbiportal.explore.bundle.min.js'] = { nominalStart: Date.now(), start: Date.now()};</script><script type="text/javascript" src="13.0.10117.179/scripts/powerbiportal.explore.bundle.min.js" defer=""></script>
+<script type="text/javascript">this.parseTimeMarkers['powerbiportal.explore.bundle.min.js'].end = Date.now();</script><script type="text/javascript">this.parseTimeMarkers = this.parseTimeMarkers || {};this.parseTimeMarkers['reportembed.bundle.min.js'] = { nominalStart: Date.now(), start: Date.now()};</script><script type="text/javascript" src="13.0.10117.179/scripts/reportembed.bundle.min.js" defer=""></script>
+<script type="text/javascript">this.parseTimeMarkers['reportembed.bundle.min.js'].end = Date.now();</script><script type="text/javascript">this.parseTimeMarkers = this.parseTimeMarkers || {};this.parseTimeMarkers['reportEmbed.min.js'] = { nominalStart: Date.now(), start: Date.now()};</script><script type="text/javascript" src="13.0.10117.179/scripts/reportEmbed.min.js" defer=""></script>
+<script type="text/javascript">this.parseTimeMarkers['reportEmbed.min.js'].end = Date.now();</script>
+
+    <noscript>
+        <div class="noScriptContainer">
+            <section class="noScriptErrorContainer">
+                <span class="noScriptErrorText">The sandbox is too restrictive and preventing correct functioning.</span>
+            </section>
+        </div>
+    </noscript>
+
+<div class="cdk-live-announcer-element cdk-visually-hidden" aria-atomic="true" aria-live="polite"></div><div id="i4c-dialogs-container"></div><div style="position:absolute;text-indent:-9999px;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;border:0;" aria-live="assertive" aria-atomic="true" id="screen_reader_alert_assertive" role="alert">Result updated to Show month and number of sales as clustered column chart as clusteredColumnChart</div><div id="svgProviderContainer" style="display: none;"></div><span></span><svg style="height: 0px; width: 0px; position: absolute;"><text visibility="hidden" font-family="'Segoe UI Semibold', wf_segoe-ui_semibold, helvetica, arial, sans-serif" font-size="12px" white-space="nowrap">M</text></svg><div class="tooltip-container themeableElement right" style="bottom: 191.333px; opacity: 0; right: 328.333px; display: none;"><div class="arrow bottom right" style="border-right-color: rgb(51, 51, 51); border-left-color: rgb(51, 51, 51); opacity: 0.95;"></div><visual-tooltip tooltip-data="tooltipData" tooltip-data-sources="tooltipDataSources" tooltip-data-items="tooltipDataItems" on-hide="onHide()" on-move="onMove()" actions-provider="actionsProvider" exploration-contract="explorationContract" exploration-capabilities="explorationCapabilities" show-action-bar="showActionBar" tooltip-shown="tooltipShown" class="tooltip-content"><div class="visual-tooltip-container"><!----><canvas-tooltip ng-if="::$ctrl.explorationContract" ng-show="$ctrl.showCanvasSection()" tooltip-data-sources="$ctrl.tooltipDataSources" exploration-contract="$ctrl.explorationContract" exploration-capabilities="$ctrl.explorationCapabilities" identities="$ctrl.identities" filter-context="$ctrl.filterContext" section-name="$ctrl.sectionName" show-canvas-mask="$ctrl.isLoading" on-canvas-ready="$ctrl.onCanvasReady()" on-canvas-busy="$ctrl.onCanvasBusy()" class="ng-hide"><!----></canvas-tooltip><!----><div ng-show="$ctrl.showDefaultSection()" class="data-item-tooltip-container"><div class="tooltip-content-container" style="background-color: rgb(51, 51, 51); opacity: 0.95;"><div class="tooltip-data-container"><div class="tooltip-row"><div class="tooltip-title-cell"><div>Month</div></div><div class="tooltip-value-cell"><div>October</div></div></div><div class="tooltip-row"><div class="tooltip-title-cell"><div>Count of Sale</div></div><div class="tooltip-value-cell"><div>17235</div></div></div></div></div></div><!----><!----></div></visual-tooltip></div></body></html>
+
+
+
+
+
+</iframe></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

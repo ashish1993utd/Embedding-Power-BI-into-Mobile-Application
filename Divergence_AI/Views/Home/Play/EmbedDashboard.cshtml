@@ -1,0 +1,72 @@
+﻿@model PowerBIEmbedded_AppOwnsData.Models.EmbedConfig
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="https://npmcdn.com/es6-promise@3.2.1"></script>
+<script src="~/scripts/powerbi.js"></script>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div id="errorWrapper">
+        <h2>
+            Error
+        </h2>
+        @Model.ErrorMessage
+    </div>
+
+    return;
+}
+
+<h2>Embedded Dashboard from Power BI Service</h2>
+<div id="dashboardContainer"></div>
+
+<div class="infoBox">
+<br />
+© Divergence.ai 2019
+</div>
+
+<script>
+    // Read embed application token from Model
+    var accessToken = "@Model.EmbedToken.Token";
+
+    // Read embed URL from Model
+    var embedUrl = "@Html.Raw(Model.EmbedUrl)";
+
+	var txtDatasetId = '9c10602a-9dc7-4b2d-8d9f-190cf2e354a8';
+
+    // Read dashboard Id from Model
+    var embedDashboardId = "@Model.Id";
+
+    // Get models. models contains enums that can be used.
+    var models = window['powerbi-client'].models;
+
+	var config = {
+        type: 'dashboard',
+        tokenType: models.TokenType.Embed,
+        accessToken: accessToken,
+        embedUrl: embedUrl,
+        id: embedDashboardId,
+		pageView: 'fitToWidth'	
+    };
+
+    // Get a reference to the embedded dashboard HTML element
+    var dashboardContainer = $('#dashboardContainer')[0];
+
+    // Embed the dashboard and display it within the div container.
+    var dashboard = powerbi.embed(dashboardContainer, config);	
+
+
+</script>
+
+
+	
+	
+	
+
+
+
+
+

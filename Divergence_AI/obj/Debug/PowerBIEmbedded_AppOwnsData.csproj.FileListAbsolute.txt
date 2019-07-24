@@ -1,0 +1,527 @@
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\PowerBIEmbedded_AppOwnsData.dll.config
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\PowerBIEmbedded_AppOwnsData.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\PowerBIEmbedded_AppOwnsData.pdb
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Win32.Primitives.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\netstandard.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.AppContext.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Collections.Concurrent.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Collections.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Collections.NonGeneric.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Collections.Specialized.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.EventBasedAsync.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.Primitives.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.TypeConverter.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Console.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Data.Common.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Contracts.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Debug.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.FileVersionInfo.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Process.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.StackTrace.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Tools.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.TraceSource.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Tracing.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Drawing.Primitives.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Dynamic.Runtime.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Globalization.Calendars.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Globalization.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Globalization.Extensions.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.Compression.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.Compression.ZipFile.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.DriveInfo.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.Primitives.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.Watcher.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.IsolatedStorage.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.MemoryMappedFiles.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.Pipes.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.UnmanagedMemoryStream.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Linq.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Linq.Expressions.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Linq.Parallel.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Linq.Queryable.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.Http.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.NameResolution.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.NetworkInformation.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.Ping.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.Primitives.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.Requests.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.Security.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.Sockets.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.WebHeaderCollection.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.WebSockets.Client.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.WebSockets.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.ObjectModel.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Reflection.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Reflection.Extensions.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Reflection.Primitives.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Resources.Reader.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Resources.ResourceManager.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Resources.Writer.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Extensions.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Handles.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.InteropServices.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Numerics.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Formatters.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Json.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Primitives.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Xml.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Claims.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Csp.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.X509Certificates.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Principal.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.SecureString.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Text.Encoding.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Text.Encoding.Extensions.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Text.RegularExpressions.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Overlapped.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Tasks.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Tasks.Parallel.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Thread.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.ThreadPool.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Timer.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.ValueTuple.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Xml.ReaderWriter.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XDocument.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XmlDocument.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XmlSerializer.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XPath.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XPath.XDocument.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Antlr3.Runtime.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.SqlServer.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Owin.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.PowerBI.Api.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Newtonsoft.Json.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Owin.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Helpers.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Mvc.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Optimization.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Razor.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Deployment.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Razor.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\WebGrease.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Newtonsoft.Json.pdb
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Newtonsoft.Json.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Helpers.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Mvc.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Optimization.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Razor.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Deployment.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Razor.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Antlr3.Runtime.pdb
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.SqlServer.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Owin.xml
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.csprojAssemblyReference.cache
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.csproj.CoreCompileInputs.cache
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.csproj.CopyComplete
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.dll
+C:\Users\t-ofgord\Desktop\App Owns Data\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.pdb
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\PowerBIEmbedded_AppOwnsData.dll.config
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\PowerBIEmbedded_AppOwnsData.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\PowerBIEmbedded_AppOwnsData.pdb
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Win32.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\netstandard.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.AppContext.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Collections.Concurrent.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Collections.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Collections.NonGeneric.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Collections.Specialized.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.EventBasedAsync.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.ComponentModel.TypeConverter.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Console.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Data.Common.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Contracts.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Debug.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.FileVersionInfo.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Process.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.StackTrace.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Tools.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.TraceSource.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Diagnostics.Tracing.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Drawing.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Dynamic.Runtime.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Globalization.Calendars.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Globalization.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Globalization.Extensions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.Compression.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.Compression.ZipFile.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.DriveInfo.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.FileSystem.Watcher.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.IsolatedStorage.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.MemoryMappedFiles.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.Pipes.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.IO.UnmanagedMemoryStream.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Linq.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Linq.Expressions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Linq.Parallel.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Linq.Queryable.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.Http.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.NameResolution.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.NetworkInformation.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.Ping.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.Requests.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.Security.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.Sockets.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.WebHeaderCollection.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.WebSockets.Client.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Net.WebSockets.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.ObjectModel.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Reflection.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Reflection.Extensions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Reflection.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Resources.Reader.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Resources.ResourceManager.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Resources.Writer.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Extensions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Handles.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.InteropServices.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Numerics.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Formatters.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Json.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Runtime.Serialization.Xml.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Claims.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Csp.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Cryptography.X509Certificates.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.Principal.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Security.SecureString.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Text.Encoding.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Text.Encoding.Extensions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Text.RegularExpressions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Overlapped.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Tasks.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Tasks.Parallel.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Thread.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.ThreadPool.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Threading.Timer.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.ValueTuple.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Xml.ReaderWriter.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XDocument.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XmlDocument.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XmlSerializer.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XPath.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Xml.XPath.XDocument.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Antlr3.Runtime.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.SqlServer.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Owin.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.PowerBI.Api.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Newtonsoft.Json.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Owin.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Helpers.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Mvc.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Optimization.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Razor.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Razor.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\WebGrease.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Newtonsoft.Json.pdb
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Newtonsoft.Json.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Helpers.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Mvc.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Optimization.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.Razor.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\System.Web.WebPages.Razor.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Antlr3.Runtime.pdb
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\EntityFramework.SqlServer.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\Microsoft.Owin.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.csprojAssemblyReference.cache
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.csproj.CoreCompileInputs.cache
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.csproj.CopyComplete
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\obj\Debug\PowerBIEmbedded_AppOwnsData.pdb
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\csc.exe
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\csc.exe.config
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\csc.rsp
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\csi.exe
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\csi.exe.config
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\csi.rsp
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.AppContext.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Console.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.IO.Compression.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Net.Http.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Net.Sockets.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.ValueTuple.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Xml.XPath.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\vbc.exe
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\vbc.exe.config
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\vbc.rsp
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\VBCSCompiler.exe
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\PowerBIEmbedded_AppOwnsData\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\PowerBIEmbedded_AppOwnsData.dll.config
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\PowerBIEmbedded_AppOwnsData.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\PowerBIEmbedded_AppOwnsData.pdb
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\csc.exe
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\csc.exe.config
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\csc.rsp
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\csi.exe
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\csi.exe.config
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\csi.rsp
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.AppContext.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Console.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.IO.Compression.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Net.Http.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Net.Sockets.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.ValueTuple.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\vbc.exe
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\vbc.exe.config
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\vbc.rsp
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\VBCSCompiler.exe
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.Win32.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\netstandard.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.AppContext.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Collections.Concurrent.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Collections.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Collections.NonGeneric.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Collections.Specialized.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.ComponentModel.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.ComponentModel.EventBasedAsync.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.ComponentModel.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.ComponentModel.TypeConverter.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Console.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Data.Common.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Diagnostics.Contracts.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Diagnostics.Debug.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Diagnostics.FileVersionInfo.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Diagnostics.Process.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Diagnostics.StackTrace.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Diagnostics.Tools.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Diagnostics.TraceSource.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Diagnostics.Tracing.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Drawing.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Dynamic.Runtime.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Globalization.Calendars.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Globalization.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Globalization.Extensions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.IO.Compression.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.IO.Compression.ZipFile.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.IO.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.IO.FileSystem.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.IO.FileSystem.DriveInfo.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.IO.FileSystem.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.IO.FileSystem.Watcher.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.IO.IsolatedStorage.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.IO.MemoryMappedFiles.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.IO.Pipes.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.IO.UnmanagedMemoryStream.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Linq.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Linq.Expressions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Linq.Parallel.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Linq.Queryable.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Net.Http.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Net.NameResolution.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Net.NetworkInformation.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Net.Ping.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Net.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Net.Requests.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Net.Security.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Net.Sockets.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Net.WebHeaderCollection.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Net.WebSockets.Client.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Net.WebSockets.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.ObjectModel.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Reflection.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Reflection.Extensions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Reflection.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Resources.Reader.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Resources.ResourceManager.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Resources.Writer.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Runtime.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Runtime.Extensions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Runtime.Handles.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Runtime.InteropServices.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Runtime.Numerics.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Runtime.Serialization.Formatters.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Runtime.Serialization.Json.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Runtime.Serialization.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Runtime.Serialization.Xml.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Security.Claims.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Security.Cryptography.Csp.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Security.Cryptography.X509Certificates.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Security.Principal.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Security.SecureString.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Text.Encoding.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Text.Encoding.Extensions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Text.RegularExpressions.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Threading.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Threading.Overlapped.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Threading.Tasks.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Threading.Tasks.Parallel.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Threading.Thread.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Threading.ThreadPool.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Threading.Timer.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.ValueTuple.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Xml.ReaderWriter.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Xml.XDocument.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Xml.XmlDocument.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Xml.XmlSerializer.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Xml.XPath.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Xml.XPath.XDocument.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Antlr3.Runtime.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\EntityFramework.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\EntityFramework.SqlServer.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.Owin.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.PowerBI.Api.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Newtonsoft.Json.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Owin.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.Helpers.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.Mvc.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.Optimization.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.Razor.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.WebPages.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.WebPages.Razor.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\WebGrease.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Newtonsoft.Json.pdb
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Newtonsoft.Json.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.Helpers.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.Mvc.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.Optimization.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.Razor.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.WebPages.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\System.Web.WebPages.Razor.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Antlr3.Runtime.pdb
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\EntityFramework.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\EntityFramework.SqlServer.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\bin\Microsoft.Owin.xml
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\obj\Debug\PowerBIEmbedded_AppOwnsData.csprojAssemblyReference.cache
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\obj\Debug\PowerBIEmbedded_AppOwnsData.csproj.CoreCompileInputs.cache
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\obj\Debug\PowerBIEmbedded_AppOwnsData.csproj.CopyComplete
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\obj\Debug\PowerBIEmbedded_AppOwnsData.dll
+C:\Users\nick2\Desktop\MS\SUMMER\Power BI Embedded\PowerBI-Developer-Samples\App Owns Data\Divergence_AI\obj\Debug\PowerBIEmbedded_AppOwnsData.pdb
