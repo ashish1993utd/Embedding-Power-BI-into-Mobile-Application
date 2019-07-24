@@ -4,14 +4,15 @@ Harnessing the power of Power BI embedded using its QnA feature
 ![Stars](https://img.shields.io/github/stars/ashish1993utd/Embedding-Power-BI-into-Mobile-Application.svg?style=social)
 ![Forks](https://img.shields.io/github/forks/ashish1993utd/Embedding-Power-BI-into-Mobile-Application.svg?style=social)
 ![Language](https://img.shields.io/github/languages/top/ashish1993utd/Embedding-Power-BI-into-Mobile-Application.svg)
-[![GitHub](https://img.shields.io/github/license/ashish1993utd/Embedding-Power-BI-into-Mobile-Application.svg)](https://choosealicense.com/licenses/mit)
 [![HitCount](http://hits.dwyl.io/ashish1993utd/Embedding-Power-BI-into-Mobile-Application.svg)](http://hits.dwyl.io/ashish1993utd/Embedding-Power-BI-into-Mobile-Application)
 
 ### Built an application that embeds the services from POWER BI into the user app. It can be used over mobile and desktop, and a user can embed a dashboard from Power BI service into this application and also use its QnA feature to get answers to questions using Natural Language.
 
 ## Demo
 ![Example screenshot](./packages/1.gif)
+## 
 ![Example screenshot](./packages/2.gif)
+##
 ![Example screenshot](./packages/3.gif)
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/CpbcTSYROik/0.jpg)](https://www.youtube.com/watch?v=CpbcTSYROik)
