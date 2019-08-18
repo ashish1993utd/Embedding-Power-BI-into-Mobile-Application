@@ -9,9 +9,9 @@ Harnessing the power of Power BI embedded using its QnA feature
 ### Built an application that embeds the services from POWER BI into the user app. It can be used over mobile and desktop, and a user can embed a dashboard from Power BI service into this application and also use its QnA feature to get answers to questions using Natural Language.
 
 ## Demo
-![Example screenshot](./packages/1.gif)
-##
 ![Example screenshot](./packages/4.gif)
+##
+![Example screenshot](./packages/1.gif)
 ## 
 ![Example screenshot](./packages/2.gif)
 ##
