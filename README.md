@@ -10,6 +10,8 @@ Harnessing the power of Power BI embedded using its QnA feature
 
 ## Demo
 ![Example screenshot](./packages/1.gif)
+##
+![Example screenshot](./packages/4.gif)
 ## 
 ![Example screenshot](./packages/2.gif)
 ##
