@@ -17,7 +17,7 @@ Harnessing the power of Power BI embedded using its QnA feature
 ##
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/CpbcTSYROik/0.jpg)](https://www.youtube.com/watch?v=CpbcTSYROik)
 
-**The entire demo of the project can be found on [YouTube](https://www.youtube.com/watch?v=CpbcTSYROik).**
+**The entire demo of the project can be found on [YouTube](https://www.youtube.com/watch?v=CpbcTSYROik) and [Youtube-Speech to text Mobile Application demo](https://www.youtube.com/watch?v=Afw9cN5ujS8).**
 
 ## Technologies and Tools
 * Power BI 
