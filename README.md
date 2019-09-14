@@ -127,4 +127,4 @@ Project is: _finished_.
 If you loved what you read here and feel like we can collaborate to produce some exciting stuff, or if you
 just want to shoot a question, please feel free to connect with me on 
 <a href="mailto: hello@sharma-ashish.com">email</a> or 
-<a href="https://www.linkedin.com/in/ashishsharma1993/" target="_blank">LinkedIn</a>
+<a href="https://www.linkedin.com/in/ashishsharma1993/" target="_blank">LinkedIn</a
